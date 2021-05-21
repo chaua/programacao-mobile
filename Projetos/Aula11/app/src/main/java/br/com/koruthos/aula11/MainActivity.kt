@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    val APP = "AULA11"
+    val TAG = "AULA11"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,46 +16,46 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Niveis de Log
-        Log.v(APP, "Log do tipo verbose")
-        Log.d(APP, "Log do tipo debug")
-        Log.i(APP, "Log do tipo info")
-        Log.w(APP, "Log do tipo warning")
-        Log.e(APP, "Log do tipo error")
-        Log.wtf(APP, "Log do tipo WTF!")
+        Log.v(TAG, "Log do tipo verbose")
+        Log.d(TAG, "Log do tipo debug")
+        Log.i(TAG, "Log do tipo info")
+        Log.w(TAG, "Log do tipo warning")
+        Log.e(TAG, "Log do tipo error")
+        Log.wtf(TAG, "Log do tipo WTF!")
 
-        Log.d(APP, "onCreate")
+        Log.d(TAG, "onCreate")
 
 
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d(APP, "onStart")
+        Log.d(TAG, "onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(APP, "onResume")
+        Log.d(TAG, "onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(APP, "onPause")
+        Log.d(TAG, "onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(APP, "onStop")
+        Log.d(TAG, "onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(APP, "onDestroy")
+        Log.d(TAG, "onDestroy")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d(APP, "onRestart")
+        Log.d(TAG, "onRestart")
     }
 
 
