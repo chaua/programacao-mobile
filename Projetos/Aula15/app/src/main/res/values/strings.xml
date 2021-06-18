@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aula15</string>
+    <string name="main_txt_titulo">Calculadora IMC</string>
+    <string name="main_edt_peso">Peso (kg)</string>
+    <string name="main_edt_altura">Altura (cm)</string>
+    <string name="main_btn_calcular">Calcular</string>
+    <string name="main_alert_titulo">Compartilhar</string>
+    <string name="main_alert_mensagem">Deseja mesmo compartilhar seu IMC?</string>
+</resources>
