@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aula19</string>
+    <string name="mapa">Mapa</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="action_salvar">salvar</string>
+    <string name="action_carregar">carregar</string>
+    <string name="action_sair">sair</string>
+</resources>
