@@ -1,8 +1,10 @@
 package br.com.koruthos.cursoandroid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     private val TAG = "Main"
@@ -22,6 +24,21 @@ class MainActivity : AppCompatActivity() {
         Log.wtf(TAG, "WTF!?")
 
         Log.d(TAG, "onCreate()")
+
+        // Recupera os componentes da tela
+        val btnComponentes: Button = findViewById(R.id.main_btn_componentes)
+        val btnFragmentos: Button = findViewById(R.id.main_btn_fragmentos)
+
+        // Cadastro dos eventos
+        btnComponentes.setOnClickListener {
+            val intent = Intent(this, ComponentesActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnFragmentos.setOnClickListener {
+            val intent = Intent(this, FragmentosActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStart() {

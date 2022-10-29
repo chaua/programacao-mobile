@@ -12,6 +12,13 @@
     <string name="componentes_rad_nao">Não</string>
     <string name="componentes_swt_noturno">Habilitar modo noturno</string>
     <string name="componentes_btn_carregar">Carregar informações</string>
+    <string name="main_btn_componentes">Exemplo de componentes</string>
+    <string name="main_btn_fragmentos">Exemplo de fragmentos</string>
+    <string name="menu_salvar">Salvar</string>
+    <string name="menu_recortar">Recortar</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_objetivos">Objetivos</string>
+    <string name="menu_perfil">Perfil</string>
 
 
 </resources>

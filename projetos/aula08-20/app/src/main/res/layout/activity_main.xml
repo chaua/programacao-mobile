@@ -1,87 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:padding="16dp"
-        android:text="Componente 1"
-        android:background="#FF0000"
-        android:textColor="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:padding="16dp"
-        android:text="Componente 2"
-        android:background="#0000FF"
-        android:textColor="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:padding="16dp"
-        android:text="Componente 3"
-        android:background="#00FFFF"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-            android:padding="16dp"
-            android:text="Componente 4"
-            android:layout_marginEnd="16dp"
-            android:background="#FFFF00"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/main_btn_componentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_btn_componentes" />
 
-        <TextView
-            android:padding="16dp"
-            android:text="Componente 4"
-            android:layout_marginEnd="16dp"
-            android:background="#FF00FF"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:padding="16dp"
-            android:text="Componente 4"
-            android:layout_marginEnd="16dp"
-            android:background="#AA00AA"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/main_btn_fragmentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_btn_fragmentos" />
 
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:text="BOTAO 2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <Button
-            android:text="BOTAO 1"
-            android:backgroundTint="#FFFF00"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-
-    </FrameLayout>
-
-
-</LinearLayout>
+</ScrollView>

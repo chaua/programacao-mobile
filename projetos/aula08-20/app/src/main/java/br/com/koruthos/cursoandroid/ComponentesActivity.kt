@@ -1,8 +1,11 @@
 package br.com.koruthos.cursoandroid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.webkit.WebView
 import android.widget.Button
@@ -10,6 +13,7 @@ import android.widget.CheckBox
 import android.widget.ImageButton
 import android.widget.ProgressBar
 import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.switchmaterial.SwitchMaterial
 
 class ComponentesActivity : AppCompatActivity() {
@@ -26,6 +30,10 @@ class ComponentesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_componentes)
+
+        // Habilita o botão de voltar
+        val actionBar = getActionBar()
+        actionBar?.setDisplayHomeAsUpEnabled(true)
 
         // 1. Acesso aos componentes do layout
         // - Modo tradicional de acessar um componente do layout
@@ -61,6 +69,9 @@ class ComponentesActivity : AppCompatActivity() {
         // - Usado para ações simples - poucas linhas de código
         btnConfirmar.setOnClickListener {
             txtTitulo.text = "Ops! Fui clicado!"
+
+            // Envia um texto par
+
         }
 
         // 2. Cadastro do evento via método
@@ -68,12 +79,12 @@ class ComponentesActivity : AppCompatActivity() {
         // - Usado para reaproveitar as ações
         btnCarregar.setOnClickListener(::onCarregarClick)
 
-        swtNoturno.setOnCheckedChangeListener { v, b ->
-            Log.d(TAG, "onCreate: $b")
+        swtNoturno.setOnCheckedChangeListener { view, checked ->
+            Log.d(TAG, "onCreate: $checked")
             mProgressBar.visibility = View.VISIBLE
             mImageButton.visibility = View.VISIBLE
 
-            chkPromocao.isChecked = b
+            chkPromocao.isChecked = checked
         }
 
 
@@ -89,6 +100,35 @@ class ComponentesActivity : AppCompatActivity() {
         // INVISIBLE: Esconde o componente e mantém o espaço
         mImageButton.visibility = View.INVISIBLE
     }
+
+    // Para definir o menu da action bar, é necessário sobrescrever
+    // dois métodos
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_componentes, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_salvar -> {
+                Toast.makeText(this, "Salvando os dados!", Toast.LENGTH_LONG).show()
+
+                // Chama uma intenção para enviar uma mensagem para outra atividade
+                val intent = Intent().apply {
+                    action = Intent.ACTION_SEND
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, "Hello, Kotlin!")
+                }
+                startActivity(Intent.createChooser(intent, "Please choose your preferred application:"))
+            }
+            R.id.action_recortar -> {
+                Toast.makeText(this, "Recortando coisas!", Toast.LENGTH_LONG).show()
+            }
+        }
+
+        return true
+    }
+
 
 
 }

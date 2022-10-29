@@ -18,23 +18,21 @@
             android:name=".MainActivity"
             android:exported="true">
             <!-- O filtro que indica que esta é a atividade principal -->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-
-        <!-- Cadastro das outras atividades -->
-        <activity
-            android:name=".ComponentesActivity"
-            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Cadastro das outras atividades -->
+        <activity
+            android:name=".ComponentesActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".FragmentosActivity"
+            android:parentActivityName=".MainActivity" />
 
 
     </application>
