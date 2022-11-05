@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <!-- ScrollView: permite que o conteúdo interno tenha barra de rolagem -->
     <!--             somente possui um filho: View ou ViewGroup -->

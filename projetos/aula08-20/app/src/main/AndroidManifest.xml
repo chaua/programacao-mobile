@@ -15,7 +15,7 @@
 
         <!-- Atividade de entrada do aplicativo -->
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <!-- O filtro que indica que esta é a atividade principal -->
             <intent-filter>
@@ -27,12 +27,12 @@
 
         <!-- Cadastro das outras atividades -->
         <activity
-            android:name=".ComponentesActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".activities.ComponentesActivity"
+            android:parentActivityName=".activities.MainActivity" />
 
         <activity
-            android:name=".FragmentosActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".activities.FragmentosActivity"
+            android:parentActivityName=".activities.MainActivity" />
 
 
     </application>

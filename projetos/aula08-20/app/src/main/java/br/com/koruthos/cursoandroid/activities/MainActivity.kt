@@ -1,10 +1,11 @@
-package br.com.koruthos.cursoandroid
+package br.com.koruthos.cursoandroid.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import br.com.koruthos.cursoandroid.R
 
 class MainActivity : AppCompatActivity() {
     private val TAG = "Main"

@@ -1,4 +1,4 @@
-package br.com.koruthos.cursoandroid
+package br.com.koruthos.cursoandroid.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,13 +7,13 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.webkit.WebView
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.ImageButton
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import br.com.koruthos.cursoandroid.R
 import com.google.android.material.switchmaterial.SwitchMaterial
 
 class ComponentesActivity : AppCompatActivity() {

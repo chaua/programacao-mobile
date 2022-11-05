@@ -4,9 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
-    <FrameLayout
+    <!-- A tag <fragment> permite a inclusão de um fragmento estático -->
+    <!--    <fragment-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"/>-->
+
+    <!-- Para adicionar um fragmento, precisamos de um container -->
+    <!-- do tipo <FrameLayout> ou <FragmentContainerView> -->
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentos_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"

@@ -19,6 +19,8 @@
     <string name="menu_home">Home</string>
     <string name="menu_objetivos">Objetivos</string>
     <string name="menu_perfil">Perfil</string>
+    <string name="tela01_txt_mensagem">Tela 01</string>
+    <string name="tela02_txt_mensagem">Tela 02</string>
 
 
 </resources>
