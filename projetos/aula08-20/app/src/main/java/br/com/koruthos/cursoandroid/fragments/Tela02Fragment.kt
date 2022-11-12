@@ -8,6 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import br.com.koruthos.cursoandroid.R
+import br.com.koruthos.cursoandroid.models.ResponsePersonagem
+import br.com.koruthos.cursoandroid.networks.NetworkManager
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class Tela02Fragment : Fragment() {
 
@@ -25,6 +30,31 @@ class Tela02Fragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_tela02, container, false)
         return view
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val service = NetworkManager.service
+
+        val call = service.listarPersonagens(0)
+
+        call.enqueue(object : Callback<ResponsePersonagem> {
+            override fun onResponse(
+                call: Call<ResponsePersonagem>,
+                response: Response<ResponsePersonagem>
+            ) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onFailure(call: Call<ResponsePersonagem>, t: Throwable) {
+                TODO("Not yet implemented")
+            }
+        })
+
+
+    }
+
+
 
     /**
      * Builder do fragmento.
