@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <!-- ScrollView: permite que o conteúdo interno tenha barra de rolagem -->
+    <!--             somente possui um filho: View ou ViewGroup -->
+    <!--             altura do filho sempre é wrap_content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/componentes_txt_titulo" />
+
+        <!-- EditText: Entrada de texto (não é mais usado) -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/componentes_edt_nome"
+            android:inputType="textPersonName" />
+
+        <!-- TextInputLayout / TextInputEditText -->
+        <!-- - Organiza o componente de entrada de texto com o label de maneira dinâmica -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/componentes_edt_nome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/componentes_edt_nome"
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/componentes_edt_senha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/componentes_edt_senha"
+                android:imeOptions="actionGo"
+                android:inputType="numberPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/componentes_edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/componentes_edt_email"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/componentes_btn_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/componentes_btn_confirmar" />
+
+        <ImageButton
+            android:id="@+id/componentes_btn_imagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/componentes_btn_imagem"
+            app:srcCompat="@drawable/ic_android_black_24dp" />
+
+        <CheckBox
+            android:id="@+id/componentes_chk_promocao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/componentes_chk_promocao" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/componentes_rad_sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/componentes_rad_sim" />
+
+            <RadioButton
+                android:id="@+id/componentes_rad_nao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/componentes_rad_nao" />
+
+        </RadioGroup>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/componentes_swt_noturno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/componentes_swt_noturno" />
+
+        <ProgressBar
+            android:id="@+id/componentes_progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/componentes_btn_carregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/componentes_btn_carregar" />
+
+    </LinearLayout>
+
+</ScrollView>
