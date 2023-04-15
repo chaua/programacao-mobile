@@ -1,26 +1,7 @@
 <resources>
     <string name="app_name">Curso Android</string>
-
-    <string name="componentes_txt_titulo">Exemplos de componentes</string>
-    <string name="componentes_edt_nome">Nome</string>
-    <string name="componentes_edt_senha">Senha</string>
-    <string name="componentes_edt_email">E-mail</string>
-    <string name="componentes_btn_confirmar">Confirmar</string>
-    <string name="componentes_btn_imagem">Exemplo de ImageButton</string>
-    <string name="componentes_chk_promocao">Desejo receber promoção</string>
-    <string name="componentes_rad_sim">Sim</string>
-    <string name="componentes_rad_nao">Não</string>
-    <string name="componentes_swt_noturno">Habilitar modo noturno</string>
-    <string name="componentes_btn_carregar">Carregar informações</string>
-    <string name="main_btn_componentes">Exemplo de componentes</string>
-    <string name="main_btn_fragmentos">Exemplo de fragmentos</string>
-    <string name="menu_salvar">Salvar</string>
-    <string name="menu_recortar">Recortar</string>
-    <string name="menu_home">Home</string>
-    <string name="menu_objetivos">Objetivos</string>
-    <string name="menu_perfil">Perfil</string>
-    <string name="tela01_txt_mensagem">Tela 01</string>
-    <string name="tela02_txt_mensagem">Tela 02</string>
-
-
+    <string name="main_txt_titulo">Mexicanator</string>
+    <string name="main_img_titulo_descricao">Imagem de um mexicano com sombrero</string>
+    <string name="main_edt_mensagem">Mensagem</string>
+    <string name="main_btn_traduzir">Traduzir</string>
 </resources>

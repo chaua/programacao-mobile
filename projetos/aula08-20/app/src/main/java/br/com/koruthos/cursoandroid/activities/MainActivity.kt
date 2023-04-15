@@ -1,50 +1,54 @@
 package br.com.koruthos.cursoandroid.activities
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import br.com.koruthos.cursoandroid.R
+import br.com.koruthos.cursoandroid.constantes.TAG
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
-    private val TAG = "Main"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Define o layout que será carregado
         setContentView(R.layout.activity_main)
 
-        // Mensagens de Log
-        Log.v(TAG, "Verbose!")
-        Log.d(TAG, "Debug!")
-        Log.i(TAG, "Info!")
-        Log.w(TAG, "Warn!")
-        Log.e(TAG, "Error!")
-        Log.wtf(TAG, "WTF!?")
+        Log.v(TAG, "Log: verbose")
+        Log.d(TAG, "Log: debug")
+        Log.i(TAG, "Log: info")
+        Log.w(TAG, "Log: warning")
+        Log.e(TAG, "Log: error")
+        Log.wtf(TAG, "Log: wtf?")
 
         Log.d(TAG, "onCreate()")
 
-        // Recupera os componentes da tela
-        val btnComponentes: Button = findViewById(R.id.main_btn_componentes)
-        val btnFragmentos: Button = findViewById(R.id.main_btn_fragmentos)
+        // Acessa os componentes de tela
+        val btnTraduzir = findViewById<Button>(R.id.main_btn_traduzir)
+        val txtTraducao = findViewById<TextView>(R.id.main_txt_traducao)
+        val edtMensagem = findViewById<TextInputEditText>(R.id.main_edt_mensagem)
 
-        // Cadastro dos eventos
-        btnComponentes.setOnClickListener {
-            val intent = Intent(this, ComponentesActivity::class.java)
-            startActivity(intent)
+        btnTraduzir.setOnClickListener {
+            Log.d(TAG, "Clicou no botão!")
+            Toast.makeText(this, "Traduzindo!", Toast.LENGTH_LONG).show()
+
+            var traducao = edtMensagem.text.toString()
+            traducao = traducao.replace("o", "ue")
+            // TODO: incluir outras regras
+
+            txtTraducao.text = traducao
         }
 
-        btnFragmentos.setOnClickListener {
-            val intent = Intent(this, FragmentosActivity::class.java)
-            startActivity(intent)
-        }
+
+
     }
 
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "onStart()")
+
     }
 
     override fun onResume() {
@@ -71,6 +75,4 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         Log.d(TAG, "onDestroy()")
     }
-
-
 }

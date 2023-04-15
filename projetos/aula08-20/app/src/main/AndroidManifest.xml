@@ -2,13 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Adiciona a lista de permissões necessárias para o app -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Solicita o acesso a localização do usuário -->
-    <!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
-    <!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,29 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoAndroid"
         tools:targetApi="31">
-
-        <!-- Atividade de entrada do aplicativo -->
         <activity
             android:name=".activities.MainActivity"
             android:exported="true">
-            <!-- O filtro que indica que esta é a atividade principal -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Cadastro das outras atividades -->
-        <activity
-            android:name=".activities.ComponentesActivity"
-            android:parentActivityName=".activities.MainActivity" />
-
-        <activity
-            android:name=".activities.FragmentosActivity"
-            android:parentActivityName=".activities.MainActivity" />
-
-
     </application>
 
 </manifest>
