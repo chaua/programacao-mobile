@@ -2,6 +2,7 @@ package br.com.koruthos.cursoandroid.activities
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.koruthos.cursoandroid.R
 import br.com.koruthos.cursoandroid.constantes.TAG
 import com.google.android.material.textfield.TextInputEditText
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         val txtTraducao = findViewById<TextView>(R.id.main_txt_traducao)
         val edtMensagem = findViewById<TextInputEditText>(R.id.main_edt_mensagem)
 
+        txtTraducao.visibility = View.GONE
+
         btnTraduzir.setOnClickListener {
             Log.d(TAG, "Clicou no botão!")
             Toast.makeText(this, "Traduzindo!", Toast.LENGTH_LONG).show()
@@ -39,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             // TODO: incluir outras regras
 
             txtTraducao.text = traducao
+            txtTraducao.visibility = View.VISIBLE
         }
 
 
