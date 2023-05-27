@@ -1,0 +1,21 @@
+1.
+POST 	/contatos
+GET	/contatos
+GET	/contatos/1
+PUT	/contatos/1
+DELETE	/contatos/1
+
+2.
+POST 	/alunos
+GET	/alunos
+GET	/alunos/2/vanderlay
+PUT	/alunos/1
+DELETE	/alunos/1
+
+4. 
+POST 	/filmes
+GET	/filmes
+GET	/filmes/1
+PUT	/filmes/1
+DELETE	/filmes/1
+
