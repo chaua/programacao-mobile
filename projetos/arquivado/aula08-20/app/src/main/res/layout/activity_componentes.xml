@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <!-- ======================================================================= -->
+    <!-- DADOS -->
+    <!-- ======================================================================= -->
+
+    <data />
+
+    <!-- ======================================================================= -->
+    <!-- LAYOUT DA TELA -->
+    <!-- ======================================================================= -->
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:padding="@dimen/spacing_normal"
+                android:text="@string/componentes_txt_titulo"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/estilo_subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_normal"
+                android:text="@string/componentes_txt_titulo_botao" />
+
+            <Button
+                android:id="@+id/componentes_btn_ola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green_900"
+                android:text="@string/componentes_btn_ola" />
+
+            <Button
+                android:id="@+id/componentes_btn_clique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red_500"
+                android:text="@string/componentes_btn_clique" />
+
+            <TextView
+                style="@style/estilo_subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_normal"
+                android:text="@string/componentes_txt_titulo_edttext" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/componentes_edt_mensagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/componentes_edt_mensagem"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/componentes_btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue_700"
+                android:text="@string/componentes_btn_ok" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
+

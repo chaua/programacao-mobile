@@ -1,0 +1,44 @@
+1. João, Fagundes, joao@email.com, 34 anos, (41) 1234-1234
+
+{
+    "nome": "João",
+    "sobrenome": "Fagundes",
+    "email":  "joao@email.com",
+    "idade": 34,
+    "telefone": "(41) 1234-1234"
+}
+
+2. Pedro Alcantara, Biologia, 5o. período, Botânica, Genética, Química
+3. Arthur Vanderlay, Biologia, 6o. período, Botânica II, Genética II, Estatística
+
+{
+    "nome": "Pedro Alcantara",
+    "curso": "Biologia",
+    "periodo": 5,
+    "disciplinas": ["Botânica", "Genética", "Química"]
+}
+
+4. Titanic, James Cameron, Leonardo di Caprio, Kate Winslet, 05/07, 13h, 08/07, 13h, 11/07, 22h
+
+{
+    "titulo": "Titanic",
+    "diretores": ["James Cameron"],
+    "atores": ["Leonardo di Caprio", "Kate Winslet"],
+    "sessoes": [
+        {
+            "data": "05/07",
+            "horario": "13h"
+        },
+        {
+            "data": "08/07",
+            "horario": "13h"
+        },
+        {
+            "data": "11/07",
+            "horario": "22h"
+        }
+    ]
+}
+
+
+
