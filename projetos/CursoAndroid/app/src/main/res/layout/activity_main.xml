@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    Atributos obrigatórios:
+        - layout_width: largura do componente
+        - layout_height: altura do componente
+
+    Valores possíveis:
+        - match_parent: Ocupa toda a dimensão do componente pai
+        - wrap_content: O tamanho se adapta ao tamanho dos filhos
+        - tamanho fixo: Usa o tamnho fixo em dp (e.g. 12dp)
+            - 0dp para ConstraintLayout
+            - para ícones e imagens fixas
+     -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp"
+        android:padding="16dp"
+
+        android:background="#FAFA00"
+        android:text="@string/main_txt_hello"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+
+        android:padding="16dp"
+
+        android:background="#FA0000"
+        android:text="Hello World! Blá blá"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+
+        android:background="#FA00FA"
+        android:text="Hello World! Blá blá"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#AAAAFA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="1"
+
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="2"
+
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:text="3"
+
+                android:backgroundTint="#006600"
+
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:text="4"
+
+                android:backgroundTint="#006600"
+
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:text="5"
+
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonVerde" />
+
+            <Button
+                android:text="6"
+
+                android:backgroundTint="#006600"
+
+                android:layout_marginVertical="16dp"
+                android:layout_marginHorizontal="4dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/main_img_mario"
+
+        android:src="@drawable/img_mario"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/main_img_mario" />
+
+</LinearLayout>

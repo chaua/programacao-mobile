@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CursoAndroid</string>
+
+    <string name="main_img_mario">Imagem do Mário pulando.</string>
+    <string name="main_txt_hello">Hello World! Blá blá</string>
+    <string name="tradutor_img_logo">Mexicano com sobreiro com cara de boas vindas!</string>
+    <string name="tradutor_txt_titulo">Mexicanator</string>
+    <string name="tradutor_edt_texto">Texto</string>
+    <string name="tradutor_btn_traduzir">Traduzir</string>
+
+</resources>

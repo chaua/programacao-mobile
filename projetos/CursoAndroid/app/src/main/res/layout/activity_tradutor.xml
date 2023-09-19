@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo da aplicação -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/tradutor_img_logo"
+            android:src="@drawable/tradutor_logo" />
+
+        <!-- Título da aplicação -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_normal"
+            android:padding="@dimen/spacing_normal"
+            android:text="@string/tradutor_txt_titulo"
+            android:textAlignment="center"
+            android:textColor="@color/green_800"
+            android:textSize="@dimen/font_larger"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <!-- Caixa de entrada de texto -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_normal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tradutor_edt_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tradutor_edt_texto"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botão de traduzir -->
+        <Button
+            android:id="@+id/tradutor_btn_traduzir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_normal"
+            android:text="@string/tradutor_btn_traduzir" />
+
+        <!-- Resultado da tradução -->
+        <TextView
+            android:id="@+id/tradutor_txt_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_normal"
+            android:visibility="visible"
+            tools:text="Esse é um exemplo de texto!" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
