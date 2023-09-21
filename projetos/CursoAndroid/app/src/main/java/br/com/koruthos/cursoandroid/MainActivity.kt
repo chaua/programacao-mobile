@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         // Define o layout da tela
         // Classe R é uma classe que referencia todos os recursos (/res)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tradutor3)
 
         // Alt + Enter: Contexto para importacao e erros
         // Ctrl + P: Mostra todos os parametros do metodo
