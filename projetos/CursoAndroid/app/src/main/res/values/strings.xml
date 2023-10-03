@@ -7,5 +7,6 @@
     <string name="tradutor_txt_titulo">Mexicanator</string>
     <string name="tradutor_edt_texto">Texto</string>
     <string name="tradutor_btn_traduzir">Traduzir</string>
+    <string name="componentes_btn_ok">OK</string>
 
 </resources>

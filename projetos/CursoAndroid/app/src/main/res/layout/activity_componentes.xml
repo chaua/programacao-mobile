@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_normal">
+
+    <!--
+    - Atributos obrigatórios:
+    -   - layout_width: largura
+    -   - layout_height: altura
+    - Atributos comuns:
+    -   - id: permite o acesso do componente via código
+    -->
+
+
+    <TextView
+        android:id="@+id/componentes_txt_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Exemplos de componentes"
+        android:textAlignment="center"
+        android:textColor="@color/blue_800"
+        android:textSize="@dimen/font_larger" />
+
+    <TextView
+        android:id="@+id/componentes_txt_texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="serif"
+        android:maxLines="4"
+        android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam consequat quam, a venenatis purus consectetur sit amet. In vestibulum justo sit amet tincidunt ultrices. Aliquam cursus, velit ac fermentum bibendum, metus risus facilisis ligula, eget sollicitudin purus tellus sit amet felis. Morbi luctus at neque et dictum. Integer gravida mi in ex mattis ullamcorper et non diam. Integer condimentum arcu a felis placerat, a porttitor metus tempor. In hac habitasse platea dictumst. Fusce arcu purus, luctus non orci in, viverra eleifend risus. Nam vel tellus magna. "
+        android:textColor="@color/grey_900"
+        android:textIsSelectable="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/componentes_txt_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="8"
+            android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam consequat quam, a venenatis purus consectetur sit amet. In vestibulum justo sit amet tincidunt ultrices. Aliquam cursus, velit ac fermentum bibendum, metus risus facilisis ligula, eget sollicitudin purus tellus sit amet felis. Morbi luctus at neque et dictum. Integer gravida mi in ex mattis ullamcorper et non diam. Integer condimentum arcu a felis placerat, a porttitor metus tempor. In hac habitasse platea dictumst. Fusce arcu purus, luctus non orci in, viverra eleifend risus. Nam vel tellus magna. "
+            android:textColor="@color/green_900"
+            android:textIsSelectable="true" />
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/componentes_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/amber_900"
+        android:text="@string/componentes_btn_ok" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/img_mario" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_mario" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_mario" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_mario" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texto normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrada de dados numéricos"
+            android:inputType="textMultiLine|number"
+            android:maxLines="2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrada de senha"
+            android:imeOptions="actionNext"
+            android:inputType="textVisiblePassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrada de email"
+            android:imeOptions="actionSend"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#teste" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#teste" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_share" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
