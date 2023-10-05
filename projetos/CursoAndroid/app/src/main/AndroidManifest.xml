@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+    * ARQUIVO DE MANIFESTO:
+        - Contém as configurações de instalação do aplicativo
+        - Possui duas seções:
+            - (1) declaração de permissões
+            - (2) configuração da aplicação
+    -->
+
+    <!-- ======================================================================================= -->
+    <!-- PERMISSÕES ............................................................................ -->
+    <!-- ======================================================================================= -->
+    <!-- Declaração das permissões de todos os recursos que o aplicativo deverá acessar. -->
+
+    <!-- Acesso à Internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Acesso à Geolocalização -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- ======================================================================================= -->
+    <!-- APLICAÇÃO ............................................................................. -->
+    <!-- ======================================================================================= -->
+    <!-- Declaração das configurações da aplicação, como nome, ícones, atividades, serviços, etc -->
 
     <application
         android:allowBackup="true"
@@ -11,10 +37,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoAndroid"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+
+
+        <!-- Atividade principal - será chamada pelo ícone da aplicação -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".ComponentesActivity"
+            android:exported="true">
+
+            <!-- Filtro de intenção que declara essa como a atividade principal -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +53,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ComponentesActivity"/>
+<!--        <activity android:name=".ComponentesActivity" />-->
 
     </application>
 
