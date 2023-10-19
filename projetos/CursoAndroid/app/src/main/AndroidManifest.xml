@@ -42,7 +42,7 @@
 
         <!-- Atividade principal - será chamada pelo ícone da aplicação -->
         <activity
-            android:name=".ComponentesActivity"
+            android:name=".MainActivity"
             android:exported="true">
 
             <!-- Filtro de intenção que declara essa como a atividade principal -->
@@ -53,7 +53,9 @@
             </intent-filter>
         </activity>
 
-<!--        <activity android:name=".ComponentesActivity" />-->
+        <!-- Todas as atividades que a aplicação for utilizar devem estar declaradas aqui -->
+        <activity android:name=".DataBindingActivity" />
+        <activity android:name=".ComponentesActivity" />
 
     </application>
 

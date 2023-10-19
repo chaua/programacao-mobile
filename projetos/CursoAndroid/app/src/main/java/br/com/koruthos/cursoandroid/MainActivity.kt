@@ -1,17 +1,45 @@
 package br.com.koruthos.cursoandroid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.databinding.DataBindingUtil
+import br.com.koruthos.cursoandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    // Variável para acessar o databinding
+    private lateinit var mBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Define o layout da tela
+        // Define o layout da tela - modo tradicional
         // Classe R é uma classe que referencia todos os recursos (/res)
-        setContentView(R.layout.activity_tradutor3)
+        // setContentView(R.layout.activity_main)
+
+        // Define o layout da tela - modo databinding
+        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        // Cadastra os eventos dos botões
+        mBinding.mainBtnComponentes.setOnClickListener {
+            // Para abrir outra atividade:
+            // 1. Criar uma intenção
+            // 2. Inicia a intenção
+            val intent = Intent(this, ComponentesActivity::class.java)
+            startActivity(intent)
+        }
+
+        mBinding.mainBtnDatabinding.setOnClickListener {
+            val intent = Intent(this, DataBindingActivity::class.java)
+            intent.putExtra(DataBindingActivity.EXTRA_NOME, "Homer Simpsons")
+            intent.putExtra(DataBindingActivity.EXTRA_IDADE, 40)
+            startActivity(intent)
+        }
+
+
+
 
         // Alt + Enter: Contexto para importacao e erros
         // Ctrl + P: Mostra todos os parametros do metodo

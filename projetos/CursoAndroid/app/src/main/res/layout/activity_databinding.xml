@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- VINCULAÇÃO DE DADOS -->
+    <!-- Conjunto de variáveis e funções para serem acessíveis dentro do XML -->
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="mensagemInicial"
+            type="String" />
+
+    </data>
+
+    <!-- LAYOUT DA APLICAÇÃO -->
+    <!-- Layout igual ao que já vinha sendo criado -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                android:id="@+id/databinding_txt_mensagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{mensagemInicial}"
+                android:visibility="@{mensagemInicial.isEmpty() ? View.GONE : View.VISIBLE}"
+                tools:text="Texto de placeholder" />
+
+            <Button
+                android:id="@+id/databinding_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Botão" />
+
+            <CheckBox
+                android:id="@+id/databinding_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkbox" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/databinding_radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Azul" />
+
+                <RadioButton
+                    android:id="@+id/databinding_radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verde" />
+
+                <RadioButton
+                    android:id="@+id/databinding_radio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vermelho" />
+
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/databinding_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Exibir mensagem" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/databinding_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome"
+                    android:imeOptions="actionSend"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/databinding_btn_confirmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</layout>

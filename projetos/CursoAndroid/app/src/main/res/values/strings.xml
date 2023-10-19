@@ -8,5 +8,6 @@
     <string name="tradutor_edt_texto">Texto</string>
     <string name="tradutor_btn_traduzir">Traduzir</string>
     <string name="componentes_btn_ok">OK</string>
+    <string name="databinding_txt_mensagem_botao">Clicou no botão!</string>
 
 </resources>
