@@ -1,4 +1,4 @@
-package br.com.koruthos.cursoandroid
+package br.com.koruthos.cursoandroid.activities
 
 import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
+import br.com.koruthos.cursoandroid.R
 import br.com.koruthos.cursoandroid.databinding.ActivityDatabindingBinding
 
 class DataBindingActivity : AppCompatActivity() {
@@ -31,10 +31,10 @@ class DataBindingActivity : AppCompatActivity() {
 
 
         // Recupera os valores passados por bundle
-        if (arguments != null) {
-            val nome = arguments.getString(EXTRA_NOME, "")
-            Toast.makeText(this, "Olá $nome", Toast.LENGTH_SHORT).show()
-        }
+//        if (arguments != null) {
+//            val nome = arguments.getString(EXTRA_NOME, "")
+//            Toast.makeText(this, "Olá $nome", Toast.LENGTH_SHORT).show()
+//        }
 
 
         // Passa os valores para o layout

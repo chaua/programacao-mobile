@@ -1,10 +1,11 @@
-package br.com.koruthos.cursoandroid
+package br.com.koruthos.cursoandroid.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.databinding.DataBindingUtil
+import br.com.koruthos.cursoandroid.R
 import br.com.koruthos.cursoandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
