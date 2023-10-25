@@ -2,7 +2,6 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -22,43 +21,50 @@
 
 
         <TextView
-            android:id="@+id/componentes_txt_titulo"
+            android:id="@+id/componentes_txt_titulo1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
             android:fontFamily="sans-serif-light"
-            android:text="Exemplos de componentes"
-            android:textAlignment="center"
+            android:text="TextView"
+            android:textAlignment="textStart"
             android:textColor="@color/blue_800"
             android:textSize="@dimen/font_larger" />
 
         <TextView
-            android:id="@+id/componentes_txt_texto"
+            android:id="@+id/componentes_txt_texto1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="8"
+            android:text="Exemplo de texto longo - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam consequat quam, a venenatis purus consectetur sit amet. In vestibulum justo sit amet tincidunt ultrices. Aliquam cursus, velit ac fermentum bibendum, metus risus facilisis ligula, eget sollicitudin purus tellus sit amet felis. Morbi luctus at neque et dictum. Integer gravida mi in ex mattis ullamcorper et non diam. Integer condimentum arcu a felis placerat, a porttitor metus tempor. In hac habitasse platea dictumst. Fusce arcu purus, luctus non orci in, viverra eleifend risus. Nam vel tellus magna. "
+            android:textColor="@color/green_900"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/componentes_txt_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
             android:ellipsize="end"
             android:fontFamily="serif"
             android:maxLines="4"
-            android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam consequat quam, a venenatis purus consectetur sit amet. In vestibulum justo sit amet tincidunt ultrices. Aliquam cursus, velit ac fermentum bibendum, metus risus facilisis ligula, eget sollicitudin purus tellus sit amet felis. Morbi luctus at neque et dictum. Integer gravida mi in ex mattis ullamcorper et non diam. Integer condimentum arcu a felis placerat, a porttitor metus tempor. In hac habitasse platea dictumst. Fusce arcu purus, luctus non orci in, viverra eleifend risus. Nam vel tellus magna. "
+            android:text="Exemplo de texto longo usando ellipsize - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam consequat quam, a venenatis purus consectetur sit amet. In vestibulum justo sit amet tincidunt ultrices. Aliquam cursus, velit ac fermentum bibendum, metus risus facilisis ligula, eget sollicitudin purus tellus sit amet felis. Morbi luctus at neque et dictum. Integer gravida mi in ex mattis ullamcorper et non diam. Integer condimentum arcu a felis placerat, a porttitor metus tempor. In hac habitasse platea dictumst. Fusce arcu purus, luctus non orci in, viverra eleifend risus. Nam vel tellus magna. "
             android:textColor="@color/grey_900"
             android:textIsSelectable="true" />
 
-        <ScrollView
+        <TextView
+            android:id="@+id/componentes_txt_titulo2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/componentes_txt_texto2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:fontFamily="sans-serif-light"
-                android:maxLines="8"
-                android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam consequat quam, a venenatis purus consectetur sit amet. In vestibulum justo sit amet tincidunt ultrices. Aliquam cursus, velit ac fermentum bibendum, metus risus facilisis ligula, eget sollicitudin purus tellus sit amet felis. Morbi luctus at neque et dictum. Integer gravida mi in ex mattis ullamcorper et non diam. Integer condimentum arcu a felis placerat, a porttitor metus tempor. In hac habitasse platea dictumst. Fusce arcu purus, luctus non orci in, viverra eleifend risus. Nam vel tellus magna. "
-                android:textColor="@color/green_900"
-                android:textIsSelectable="true" />
-
-        </ScrollView>
-
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="Button"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <Button
             android:id="@+id/componentes_btn_ok"
@@ -71,43 +77,71 @@
             android:id="@+id/componentes_btn_nok"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
             android:backgroundTint="@color/red_900"
             android:text="@string/componentes_btn_ok" />
 
-
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <TextView
+            android:id="@+id/componentes_txt_titulo3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="ImageView"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/img_mario" />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:scaleType="fitXY"
-                android:src="@drawable/img_mario" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img_mario" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/img_mario" />
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:scaleType="centerInside"
-                android:src="@drawable/img_mario" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_mario" />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_mario" />
 
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_mario" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="TextInputEditText"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -159,69 +193,194 @@
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_normal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Exemplo de outro estilo de entrada de texto"
+                android:imeOptions="actionNext"
+                android:inputType="textUri" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="Chip"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <com.google.android.material.chip.ChipGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal">
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#teste" />
+                android:text="#teste1" />
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#teste" />
+                android:text="#teste2" />
 
         </com.google.android.material.chip.ChipGroup>
 
+        <TextView
+            android:id="@+id/componentes_txt_titulo6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="CheckBox"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
+
         <CheckBox
-            android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="CheckBox 1" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox 2" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:text="CheckBox 3" />
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="RadioButton"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal">
 
             <RadioButton
                 android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="RadioButton 1" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="RadioButton 2" />
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="ToggleButton"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <ToggleButton
             android:id="@+id/toggleButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
             android:text="ToggleButton" />
 
-        <Switch
-            android:id="@+id/switch1"
+        <TextView
+            android:id="@+id/componentes_txt_titulo9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Switch" />
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="SwitchCompat"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch 1" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:text="Switch 2" />
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="FloatingActionButton"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
             android:clickable="true"
-            app:srcCompat="@drawable/ic_share" />
+            android:contentDescription="Curtir"
+            app:srcCompat="@drawable/ic_curtir" />
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="RatingBar"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <RatingBar
             android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:numStars="4"
+            android:rating="1" />
+
+        <TextView
+            android:id="@+id/componentes_txt_titulo12"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:fontFamily="sans-serif-light"
+            android:text="ProgressBar"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue_800"
+            android:textSize="@dimen/font_larger" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -233,31 +392,9 @@
             android:id="@+id/progressBar2"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="URL"
-                android:imeOptions="actionNext"
-                android:inputType="textUri" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <WebView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            tools:ignore="WebViewLayout" />
-
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:indeterminate="true" />
 
     </LinearLayout>
 

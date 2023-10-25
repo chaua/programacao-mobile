@@ -1,12 +1,12 @@
 package br.com.koruthos.cursoandroid.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import br.com.koruthos.cursoandroid.R
 import com.google.android.material.textfield.TextInputEditText
 
@@ -31,8 +31,8 @@ class ComponentesActivity : AppCompatActivity() {
         //      - Já está incluos na biblioteca padrão do android (Jetpack - androidx)
 
         // Modo de acesso tradicional
-        val textView1: TextView = findViewById(R.id.componentes_txt_texto)
-        textView1.text = "Alô, mamãe"
+        val textView1: TextView = findViewById(R.id.componentes_txt_texto1)
+        textView1.text = "Alô, mamãe" // Nunca usar texto hard-coded!
         textView1.text = getText(R.string.app_name)
 
         // Cadastrar eventos aos componentes
@@ -60,7 +60,7 @@ class ComponentesActivity : AppCompatActivity() {
         //  - Usamos método da classe para operações complexas ou reaproveitar código
         //
         // SINTAXE: listener(::nomeDoMetodo)
-        botao2.setOnClickListener(::onBotaoLongClick)
+        botao2.setOnClickListener(::onBotaoClick)
 
         // Exemplo com listener que possui mais de um método
         //  - Usando quando o listenter possui mais de um método de evento
@@ -73,13 +73,10 @@ class ComponentesActivity : AppCompatActivity() {
                 return true
             }
         })
-
     }
 
-
-    fun onBotaoLongClick(view: View) {
+    fun onBotaoClick(view: View) {
         Toast.makeText(this, "Clicou no botão 2!", Toast.LENGTH_SHORT).show()
     }
-
 
 }

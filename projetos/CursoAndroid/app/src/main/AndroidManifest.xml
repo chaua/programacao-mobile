@@ -1,32 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <!--
-    * ARQUIVO DE MANIFESTO:
-        - Contém as configurações de instalação do aplicativo
-        - Possui duas seções:
-            - (1) declaração de permissões
-            - (2) configuração da aplicação
+    Todos projetos de aplicativo precisam ter um arquivo `AndroidManifest.xml` na raiz do conjunto de origem do projeto.
+    O arquivo de manifesto descreve informações essenciais sobre o aplicativo para as ferramentas de compilação do
+    Android, para o sistema operacional Android e para o Google Play.
+
+    O manifesto precisa declarar os seguintes itens:
+
+    - O nome do pacote do aplicativo (injetado pelo `build.gradle`).
+    - Os componentes do aplicativo, que incluem todos os serviços, broadcast receivers, provedores de conteúdo e
+        atividades.
+    - As permissões que o aplicativo precisa ter para acessar partes protegidas do sistema ou de outros aplicativos.
+    - Os recursos de hardware e software exigidos pelo aplicativo, que afetam quais dispositivos podem instalar o
+        aplicativo a partir do Google Play.
     -->
 
     <!-- ======================================================================================= -->
     <!-- PERMISSÕES ............................................................................ -->
     <!-- ======================================================================================= -->
-    <!-- Declaração das permissões de todos os recursos que o aplicativo deverá acessar. -->
+
+    <!--
+    Os aplicativos Android precisam solicitar permissão de acesso aos dados confidenciais do usuário (como contatos e
+    SMS) ou a determinados recursos do sistema (como a câmera e o acesso à Internet).
+
+    Cada permissão é identificada por um rótulo exclusivo. Por exemplo, um aplicativo que precisa enviar mensagens SMS
+    precisa ter a seguinte linha no manifesto:
+
+    ```xml
+    <manifest ... >
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    ...
+    </manifest>
+    ```
+    A partir do Android 6.0 (API de nível 23), o usuário pode aprovar ou rejeitar algumas permissões de aplicativo no
+    ambiente de execução. Mas independentemente de qual versão do Android seja compatível com seu aplicativo, é
+    necessário declarar todas as solicitações de permissões com um elemento <uses-permission> no manifesto. Se a
+    permissão for concedida, o aplicativo será capaz de usar os recursos protegidos. Caso contrário, a tentativa de
+    acessar esses recursos falhará.
+    -->
 
     <!-- Acesso à Internet -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Acesso à Geolocalização -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     <!-- ======================================================================================= -->
-    <!-- APLICAÇÃO ............................................................................. -->
+    <!-- COMPATIBILIDADE ....................................................................... -->
     <!-- ======================================================================================= -->
-    <!-- Declaração das configurações da aplicação, como nome, ícones, atividades, serviços, etc -->
+
+    <!--
+    O arquivo de manifesto também é onde você pode declarar quais são os tipos de recursos de hardware ou software
+    exigidos pelo aplicativo e com quais tipos de dispositivo ele é compatível. O Google Play Store não permite que seu
+    aplicativo seja instalado em dispositivos que não fornecem os recursos ou a versão do sistema exigidos.
+
+    O elemento <uses-feature> permite que você declare os recursos de hardware e software de que o aplicativo precisa.
+    -->
+
+    <!-- Acesso à câmera do dispositivo -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- ======================================================================================= -->
+    <!-- APLICATIVO ............................................................................ -->
+    <!-- ======================================================================================= -->
+
+    <!--
+    Declaração das configurações do aplicativo, como nome, ícones, atividades, serviços, etc.
+
+    Muitos desses atributos, como icon, label, permission, process, taskAffinity e allowTaskReparenting, definem valores
+    padrão para os atributos correspondentes dos elementos do componente. Outros, como debuggable, enabled, description
+    e allowClearUserData, definem valores para o aplicativo e não são substituídos pelos componentes.
+
+    Atributos:
+
+    - `android:allowBackup`: Define se o aplicativo pode participar da infraestrutura de backup e restauração.
+    - `dataExtractionRules`: Os aplicativos podem definir esse atributo como um recurso XML, em que especificam as
+        regras que determinam quais arquivos e diretórios podem ser copiados do dispositivo como parte das operações de
+        backup ou transferência.
+    - `fullBackupContent`: Esse atributo aponta para um arquivo XML que contém regras de backup completas para o Backup
+        automático.
+    - `icon`: Um ícone para o aplicativo.
+    - `label`: Um rótulo legível pelo usuário para o aplicativo.
+    - `theme`: Uma referência a um recurso de estilo que define um tema padrão para todas as atividades no aplicativo.
+        Atividades individuais podem substituir o padrão, definindo os próprios atributos theme
+    -->
 
     <application
         android:allowBackup="true"
@@ -39,24 +102,83 @@
         android:theme="@style/Theme.CursoAndroid"
         tools:targetApi="31">
 
+        <!-- =================================================================================== -->
+        <!-- ATIVIDADES ........................................................................ -->
+        <!-- =================================================================================== -->
 
-        <!-- Atividade principal - será chamada pelo ícone da aplicação -->
+        <!--
+        Declara uma atividade (uma subclasse Activity) que implementa parte da IU visual do aplicativo. Todas as
+        atividades precisam ser representadas por elementos <activity> no arquivo de manifesto. Aquelas que não forem
+        declaradas não serão vistas pelo sistema e não serão executadas.
+
+        Atributos:
+
+        - `name`: É o nome da classe que implementa a atividade, uma subclasse de Activity. Normalmente, o valor do
+            atributo é um nome de classe totalmente qualificado, como "com.example.project.ExtracurricularActivity".
+            No entanto, como abreviação, se o primeiro caractere do nome for um ponto, como ".ExtracurricularActivity",
+            ele será anexado ao namespace especificado no arquivo build.gradle.
+
+            Depois de publicar o aplicativo, não mude esse nome, a menos que você defina android:exported="false".
+
+        - `exported`: Define se a atividade pode ser iniciada por componentes de outros aplicativos.
+        -->
+
+        <!-- Atividade principal - será chamada ao iniciar o aplicativo -->
         <activity
-            android:name=".activities.RecyclerActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
 
-            <!-- Filtro de intenção que declara essa como a atividade principal -->
+            <!-- Filtros de intenção definem se a atividade pode ser iniciada por componentes de outros aplicativos -->
             <intent-filter>
+                <!-- Action MAIN e Category LAUNCHER - indicam que ela será chamada ao iniciar o aplicativo -->
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Todas as atividades que a aplicação for utilizar devem estar declaradas aqui -->
-        <activity android:name=".activities.DataBindingActivity" />
-        <activity android:name=".activities.ComponentesActivity" />
+        <!--
+        Outras atividades devem ser declaradas no manifesto.
+
+        Atributos:
+
+        - `parentActivityName`: É o nome da classe do pai lógico da atividade. O sistema lê esse atributo para
+        determinar qual atividade será iniciada quando o usuário tocar no botão "para cima" na barra de ações.
+        -->
+
+        <activity
+            android:name=".activities.TradutorActivity"
+            android:theme="@style/Theme.CursoAndroidActionBar"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <activity
+            android:name=".activities.ConstraintActivity"
+            android:theme="@style/Theme.CursoAndroidActionBar"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <activity
+            android:name=".activities.ComponentesActivity"
+            android:theme="@style/Theme.CursoAndroidActionBar"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <activity
+            android:name=".activities.DataBindingActivity"
+            android:theme="@style/Theme.CursoAndroidActionBar"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <activity
+            android:name=".activities.RecyclerActivity"
+            android:theme="@style/Theme.CursoAndroidActionBar"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <!-- =================================================================================== -->
+        <!-- OUTROS COMPONENTES ................................................................ -->
+        <!-- =================================================================================== -->
+        <!--
+        Todos os Serviços, Broadcast Receivers e Content Providers também devem estar declarados aqui.
+        -->
 
     </application>
+
+    <!-- Referência: https://developer.android.com/guide/topics/manifest/manifest-intro?hl=pt-br -->
 
 </manifest>

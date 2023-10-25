@@ -1,12 +1,12 @@
 package br.com.koruthos.cursoandroid.activities
 
 import android.content.ContentValues.TAG
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import br.com.koruthos.cursoandroid.R
@@ -29,13 +29,9 @@ class DataBindingActivity : AppCompatActivity() {
         // Chamada para a classe de DataBinding - Define o layout da tela
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_databinding)
 
-
         // Recupera os valores passados por bundle
-//        if (arguments != null) {
-//            val nome = arguments.getString(EXTRA_NOME, "")
-//            Toast.makeText(this, "Olá $nome", Toast.LENGTH_SHORT).show()
-//        }
-
+        val nome = intent.extras?.getString(EXTRA_NOME, "?")
+        Toast.makeText(this, "Olá $nome", Toast.LENGTH_SHORT).show()
 
         // Passa os valores para o layout
         mBinding.mensagemInicial = "Olá, essa é a mensagem inicial!"
@@ -105,12 +101,7 @@ class DataBindingActivity : AppCompatActivity() {
                 mBinding.databindingEdittext.requestFocus()
             }
         }
-
-
     }
-
-
-
 
     // companion object: declaração de variáveis e métodos de classe
     companion object {

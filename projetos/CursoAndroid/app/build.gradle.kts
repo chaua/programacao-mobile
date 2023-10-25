@@ -59,9 +59,19 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.databinding:databinding-runtime:8.1.2")
 
-    // Inclusão de imagens redondas
+    // Biblioteca para criação de imagens redondas
     implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    // Biblioteca para carregar imagens:
+    //    - Redimensiona imagens automaticamente e realiza a cache
+    //    - Tratativa para quando a imagem está carregando ou deu erro
+    //    - https://github.com/bumptech/glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

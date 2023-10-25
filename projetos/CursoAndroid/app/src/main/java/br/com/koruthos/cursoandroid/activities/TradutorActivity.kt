@@ -75,6 +75,4 @@ class TradutorActivity : AppCompatActivity() {
         return texto
     }
 
-
-
 }

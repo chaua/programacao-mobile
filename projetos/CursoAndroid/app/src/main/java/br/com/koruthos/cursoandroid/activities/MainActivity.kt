@@ -24,14 +24,25 @@ class MainActivity : AppCompatActivity() {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         // Cadastra os eventos dos botões
-        mBinding.mainBtnComponentes.setOnClickListener {
+        mBinding.mainBtnTradutor.setOnClickListener {
             // Para abrir outra atividade:
             // 1. Criar uma intenção
             // 2. Inicia a intenção
+            val intent = Intent(this, TradutorActivity::class.java)
+            startActivity(intent)
+        }
+
+        mBinding.mainBtnConstraint.setOnClickListener {
+            val intent = Intent(this, ConstraintActivity::class.java)
+            startActivity(intent)
+        }
+
+        mBinding.mainBtnComponentes.setOnClickListener {
             val intent = Intent(this, ComponentesActivity::class.java)
             startActivity(intent)
         }
 
+        // Exemplo de passagem de parâmetros para a Atividade
         mBinding.mainBtnDatabinding.setOnClickListener {
             val intent = Intent(this, DataBindingActivity::class.java)
             intent.putExtra(DataBindingActivity.EXTRA_NOME, "Homer Simpsons")
@@ -39,8 +50,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
+        mBinding.mainBtnRecyclerview.setOnClickListener {
+            val intent = Intent(this, RecyclerActivity::class.java)
+            startActivity(intent)
+        }
 
         // Alt + Enter: Contexto para importacao e erros
         // Ctrl + P: Mostra todos os parametros do metodo

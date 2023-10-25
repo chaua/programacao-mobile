@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- VINCULAÇÃO DE DADOS -->
     <!-- Conjunto de variáveis e funções para serem acessíveis dentro do XML -->
@@ -9,10 +10,10 @@
 
     <!-- LAYOUT DA APLICAÇÃO -->
     <!-- Layout igual ao que já vinha sendo criado -->
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <!--
         Atributos obrigatórios:
@@ -27,18 +28,108 @@
                 - para ícones e imagens fixas
          -->
 
-        <Button
-            android:id="@+id/main_btn_componentes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Exemplos de componentes" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/main_img_titulo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/main_img_titulo"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:src="@mipmap/ic_launcher_round" />
 
-        <Button
-            android:id="@+id/main_btn_databinding"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/main_txt_titulo"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Exemplo usando DataBinding" />
-    </LinearLayout>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/main_txt_titulo"
+            android:textSize="@dimen/font_larger"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/main_img_titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/main_img_titulo"
+            app:layout_constraintTop_toTopOf="@+id/main_img_titulo" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/main_btn_tradutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="@string/main_btn_tradutor" />
+
+                <Button
+                    android:id="@+id/main_btn_constraint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="@string/main_btn_constraint" />
+
+                <Button
+                    android:id="@+id/main_btn_componentes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="@string/main_txt_componentes" />
+
+                <Button
+                    android:id="@+id/main_btn_databinding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="@string/main_txt_databinding" />
+
+                <Button
+                    android:id="@+id/main_btn_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="@string/main_txt_recyclerview" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_img_titulo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
 

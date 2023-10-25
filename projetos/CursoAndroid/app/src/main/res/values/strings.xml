@@ -1,13 +1,26 @@
 <resources>
     <string name="app_name">CursoAndroid</string>
 
-    <string name="main_img_mario">Imagem do Mário pulando.</string>
-    <string name="main_txt_hello">Hello World! Blá blá</string>
-    <string name="tradutor_img_logo">Mexicano com sobreiro com cara de boas vindas!</string>
-    <string name="tradutor_txt_titulo">Mexicanator</string>
-    <string name="tradutor_edt_texto">Texto</string>
-    <string name="tradutor_btn_traduzir">Traduzir</string>
     <string name="componentes_btn_ok">OK</string>
+
     <string name="databinding_txt_mensagem_botao">Clicou no botão!</string>
+
+    <string name="main_btn_constraint">Tela usando ConstraintLayout</string>
+    <string name="main_btn_tradutor">Tradutor Portunõl</string>
+    <string name="main_img_mario">Imagem do Mário pulando.</string>
+    <string name="main_img_titulo">Imagem do robô Android dentro da tela de um celular.</string>
+    <string name="main_txt_componentes">Componentes</string>
+    <string name="main_txt_databinding">DataBinding</string>
+    <string name="main_txt_hello">Hello World! Blá blá</string>
+    <string name="main_txt_titulo">Curso Android</string>
+
+    <string name="tradutor_btn_traduzir">Traduzir</string>
+    <string name="tradutor_edt_texto">Texto</string>
+    <string name="tradutor_img_logo">Balão amarelo escrito "Olá" em espanhol.</string>
+    <string name="tradutor_txt_titulo">Tradutor Portuñol</string>
+    <string name="main_txt_recyclerview">RecyclerView</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="produto_img_foto">Imagem do produto</string>
 
 </resources>
