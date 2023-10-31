@@ -70,8 +70,16 @@ dependencies {
     //    - https://github.com/bumptech/glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
+    // Retrofit: biblioteca para realizar chamadas para o webservice
+    implementation("com.squareup.retrofit2:retrofit:2.5.0") {
+        exclude("okhttp")
+    }
+    implementation("com.squareup.okhttp3:okhttp:3.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:3.10.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.5.0")
 
-
+    // Gson: biblioteca para serializar objetos Java em JSON
+    implementation("com.google.code.gson:gson:2.8.9")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
