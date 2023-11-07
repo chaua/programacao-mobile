@@ -170,6 +170,11 @@
             android:theme="@style/Theme.CursoAndroidActionBar"
             android:parentActivityName=".activities.MainActivity" />
 
+        <activity
+            android:name=".activities.FragmentoActivity"
+            android:theme="@style/Theme.CursoAndroidActionBar"
+            android:parentActivityName=".activities.MainActivity" />
+
         <!-- =================================================================================== -->
         <!-- OUTROS COMPONENTES ................................................................ -->
         <!-- =================================================================================== -->

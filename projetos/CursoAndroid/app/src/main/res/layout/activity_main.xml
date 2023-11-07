@@ -111,6 +111,13 @@
                     android:layout_marginBottom="@dimen/spacing_small"
                     android:text="@string/main_txt_recyclerview" />
 
+                <Button
+                    android:id="@+id/main_btn_fragmento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="@string/main_txt_fragmento" />
+
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 

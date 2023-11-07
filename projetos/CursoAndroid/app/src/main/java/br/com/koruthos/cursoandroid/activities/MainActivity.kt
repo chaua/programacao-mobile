@@ -55,6 +55,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        mBinding.mainBtnFragmento.setOnClickListener {
+            val intent = Intent(this, FragmentoActivity::class.java)
+            startActivity(intent)
+        }
+
         // Alt + Enter: Contexto para importacao e erros
         // Ctrl + P: Mostra todos os parametros do metodo
 

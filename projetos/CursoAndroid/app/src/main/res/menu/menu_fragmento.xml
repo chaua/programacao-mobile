@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_salvar"
+        android:icon="@drawable/ic_salvar"
+        android:title="Salvar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_editar"
+        android:icon="@drawable/ic_compartilhar"
+        android:title="Editar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_sair"
+        android:icon="@drawable/ic_curtir"
+        android:title="Sair"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

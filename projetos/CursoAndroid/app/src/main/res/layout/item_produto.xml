@@ -30,7 +30,6 @@
 
             <ImageView
                 android:id="@+id/produto_img_foto"
-                android:src=""
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="@string/produto_img_foto"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- VINCULAÇÃO DE DADOS -->
+    <!-- Conjunto de variáveis e funções para serem acessíveis dentro do XML -->
+    <data />
+
+    <!-- LAYOUT DA APLICAÇÃO -->
+    <!-- Layout igual ao que já vinha sendo criado -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Olá, essa é o HomeFragment!!!"
+            android:textAlignment="center" />
+
+    </FrameLayout>
+
+</layout>
+
