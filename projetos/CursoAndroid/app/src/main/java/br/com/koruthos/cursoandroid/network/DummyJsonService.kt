@@ -1,5 +1,7 @@
 package br.com.koruthos.cursoandroid.network
 
+import br.com.koruthos.cursoandroid.models.Product
+import br.com.koruthos.cursoandroid.models.ResponseProducts
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.DELETE
@@ -33,30 +35,30 @@ interface DummyJsonService {
 
     // GET 	/products 	        // get all products
     @GET("products/")
-    fun getTodosProdutos(): Call<Any>
+    fun getTodosProdutos(): Call<ResponseProducts>
 
     // GET 	/products/1 	    // get single product
     @GET("products/{id}")
-    fun getProduto(@Path("id") id: Int): Call<Any>
+    fun getProduto(@Path("id") id: Int): Call<Product>
 
-    // GET 	/products/search?q=Laptop 	// search products
+    // GET 	/products?limit=10&skip=1 	// search products
     @GET("products/")
-    fun getProdutoPorNome(@Query("q") query: String): Call<Any>
+    fun getProdutosPaginado(@Query("limit") limit: Int, @Query("skip") pagina: Int): Call<ResponseProducts>
 
     // POST 	/products/add 	// add a product
-    @POST("products/add")
-    fun postProduto(@Body produto: Any): Call<Any>
+//    @POST("products/add")
+//    fun postProduto(@Body produto: Any): Call<Any>
 
     // PUT 	/products/1 	    // update a product
-    @PUT("products/{id}")
-    fun putProduto(@Path("id") id: Int, @Body produto: Any): Call<Any>
+//    @PUT("products/{id}")
+//    fun putProduto(@Path("id") id: Int, @Body produto: Any): Call<Any>
 
     // PATCH 	/products/1 	// update a product
-    @PATCH("products/{id}")
-    fun patchProduto(@Path("id") id: Int, @Body produto: Any): Call<Any>
+//    @PATCH("products/{id}")
+//    fun patchProduto(@Path("id") id: Int, @Body produto: Any): Call<Any>
 
     // DELETE 	/products/1 	// delete a product
-    @DELETE("products/{id}")
-    fun deleteProduto(@Path("id") id: Int): Call<Any>
+//    @DELETE("products/{id}")
+//    fun deleteProduto(@Path("id") id: Int): Call<Any>
 
 }
