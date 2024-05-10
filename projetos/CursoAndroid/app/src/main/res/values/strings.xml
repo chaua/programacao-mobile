@@ -3,4 +3,7 @@
 
     <string name="main_txt_helloworld">Alô, mamãe!</string>
     <string name="databinding_btn_oi">Oi</string>
+    <string name="databinding_btn_classe">Evento via Classe</string>
+    <string name="databinding_btn_metodo">Evento via Método</string>
+    <string name="databinding_btn_lambda">Evento via lambda</string>
 </resources>
