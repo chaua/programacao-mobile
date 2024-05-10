@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Todo arquivo de layout deve ter na raiz uma View ou ViewGroup
+
+    - View: Componentes de tela - Button, InputTextView, TextView, ImageView
+            Algumas views podem aceitar um filho
+
+    - ViewGroup: Containeres para armazenarem outras Views ou ViewGroups
+                 São as classes de Layout: ConstraintLayout, FrameLayout, LinearLayout
+                 Definem a estrutra lógica que os filhos vão estar dispostos
+
+Dois atributos são obrigatórios:
+    - layout_width: largura
+    - layout_height: altura
+
+Os valores possíveis são:
+    - Valor fixo: 300dp (dp é uma medida de pixels proporcional)
+                  Não devemos usar valores fixos - somente para icones
+    - match_parent: assumir todo tamanho disponivel no pai
+    - wrap_content: acomoda o tamanho do filho
+
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:text="Botao 1"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:padding="16dp"
+        android:text="Botao 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+
+        android:text="Botao 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:text="Botao 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:background="#F57F17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginHorizontal="64dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginHorizontal="64dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginHorizontal="64dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginHorizontal="64dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="32dp"
+                android:padding="32dp"
+                android:text="Os dispositivos Android não só têm diferentes tamanhos de tela, como celulares, tablets, TVs etc., mas também telas com diferentes tamanhos de pixel. Um dispositivo pode ter 160 pixels por polegada, enquanto outro cabe em 480 pixels no mesmo espaço. Se você não considerar essas variações em densidade de pixels, o sistema pode dimensionar as imagens, resultando em imagens desfocadas, ou elas podem aparecer no tamanho errado."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
