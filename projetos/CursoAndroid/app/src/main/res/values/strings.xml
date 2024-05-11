@@ -6,4 +6,13 @@
     <string name="databinding_btn_classe">Evento via Classe</string>
     <string name="databinding_btn_metodo">Evento via Método</string>
     <string name="databinding_btn_lambda">Evento via lambda</string>
+    <string name="componente_txt_titulo">Componentes</string>
+    <string name="componente_txt_textview">TextView</string>
+    <string name="componente_txt_button">Button</string>
+    <string name="componente_txt_mensagem">TextView é usada para exibir mensagens estáticas na tela. Funciona junto com o ScrollView.</string>
+    <string name="componente_btn_botao_normal">Exemplo de Botão normal</string>
+    <string name="componente_txt_textinput">TextInputEditText</string>
+    <string name="componente_edt_nome">Nome</string>
+    <string name="componente_edt_senha">Senha</string>
+    <string name="componente_edt_mensagem">Mensagem</string>
 </resources>
