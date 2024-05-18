@@ -15,4 +15,7 @@
     <string name="componente_edt_nome">Nome</string>
     <string name="componente_edt_senha">Senha</string>
     <string name="componente_edt_mensagem">Mensagem</string>
+    <string name="navigation_fragmento1">Fragmento 1</string>
+    <string name="navigation_fragmento2">Fragmento 2</string>
+    <string name="navigation_fragmento3">Fragmento 3</string>
 </resources>

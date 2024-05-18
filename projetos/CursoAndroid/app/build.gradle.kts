@@ -33,6 +33,7 @@ android {
     // 1. Habilitar o databinding
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 

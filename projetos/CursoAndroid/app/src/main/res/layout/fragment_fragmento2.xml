@@ -10,10 +10,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/main_btn_fragmento"
+        <TextView
+            android:background="@color/blue_800"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:text="Fragmento 2"/>
 
     </LinearLayout>
 

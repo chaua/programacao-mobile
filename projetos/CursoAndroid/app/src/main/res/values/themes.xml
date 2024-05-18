@@ -5,7 +5,7 @@
     <!-- > https://material-foundation.github.io/material-theme-builder/ -->
 
     <!-- Base application theme. -->
-    <style name="Base.Theme.CursoAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.CursoAndroid" parent="Theme.Material3.DayNight">
 
         <item name="colorPrimary">@color/md_theme_primary</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
