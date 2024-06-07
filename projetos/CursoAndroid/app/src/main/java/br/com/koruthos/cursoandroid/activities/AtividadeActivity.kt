@@ -1,9 +1,10 @@
-package br.com.koruthos.cursoandroid
+package br.com.koruthos.cursoandroid.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import br.com.koruthos.cursoandroid.R
 
 class AtividadeActivity : AppCompatActivity() {
 

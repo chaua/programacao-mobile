@@ -12,6 +12,13 @@
 
         <Button
             android:id="@+id/main_btn_fragmento"
+            android:text="@string/main_btn_fragmentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/main_btn_recycler"
+            android:text="@string/main_btn_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

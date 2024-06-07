@@ -1,19 +1,13 @@
-package br.com.koruthos.cursoandroid
+package br.com.koruthos.cursoandroid.activities
 
-import android.annotation.SuppressLint
-import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
+import br.com.koruthos.cursoandroid.R
 import br.com.koruthos.cursoandroid.databinding.ActivityComponenteBinding
-import br.com.koruthos.cursoandroid.databinding.ActivityDataBindingBinding
 
 class ComponenteActivity : AppCompatActivity() {
 

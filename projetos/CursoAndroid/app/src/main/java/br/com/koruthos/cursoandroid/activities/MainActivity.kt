@@ -1,14 +1,11 @@
-package br.com.koruthos.cursoandroid
+package br.com.koruthos.cursoandroid.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import br.com.koruthos.cursoandroid.databinding.ActivityDataBindingBinding
+import br.com.koruthos.cursoandroid.R
 import br.com.koruthos.cursoandroid.databinding.ActivityMainBinding
-import br.com.koruthos.cursoandroid.util.TAG
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +18,13 @@ class MainActivity : AppCompatActivity() {
         mBinding.mainBtnFragmento.setOnClickListener {
             val intent = Intent(this, FragmentoActivity::class.java)
             startActivity(intent)
+            // código abaixo ainda é executado
+        }
+
+        mBinding.mainBtnRecycler.setOnClickListener {
+            val intent = Intent(this, RecyclerActivity::class.java)
+            startActivity(intent)
+            // código abaixo ainda é executado
         }
 
     }

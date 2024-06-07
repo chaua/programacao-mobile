@@ -27,7 +27,7 @@ Os valores possíveis são:
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <Button
         android:text="Botao 1"
