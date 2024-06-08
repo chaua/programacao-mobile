@@ -18,14 +18,18 @@ class MainActivity : AppCompatActivity() {
         mBinding.mainBtnFragmento.setOnClickListener {
             val intent = Intent(this, FragmentoActivity::class.java)
             startActivity(intent)
-            // código abaixo ainda é executado
         }
 
         mBinding.mainBtnRecycler.setOnClickListener {
             val intent = Intent(this, RecyclerActivity::class.java)
             startActivity(intent)
-            // código abaixo ainda é executado
         }
+
+        mBinding.mainBtnRetrofit.setOnClickListener {
+            val intent = Intent(this, RetrofitActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 

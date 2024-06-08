@@ -11,6 +11,24 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/main_btn_atividade"
+            android:text="@string/main_btn_atividade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/main_btn_componente"
+            android:text="@string/main_btn_componente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/main_btn_data_binding"
+            android:text="@string/main_btn_data_binding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
             android:id="@+id/main_btn_fragmento"
             android:text="@string/main_btn_fragmentos"
             android:layout_width="match_parent"
@@ -19,6 +37,12 @@
         <Button
             android:id="@+id/main_btn_recycler"
             android:text="@string/main_btn_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/main_btn_retrofit"
+            android:text="@string/main_btn_retrofit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

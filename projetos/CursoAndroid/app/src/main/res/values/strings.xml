@@ -19,5 +19,9 @@
     <string name="navigation_fragmento2">Fragmento 2</string>
     <string name="navigation_fragmento3">Fragmento 3</string>
     <string name="main_btn_fragmentos">Exemplo fragmentos</string>
-    <string name="main_btn_recycler">Exemplo de recycler view</string>
+    <string name="main_btn_recycler">Exemplo de Recycler View</string>
+    <string name="main_btn_atividade">Ciclo de vida da atividade</string>
+    <string name="main_btn_componente">Exemplo de componentes</string>
+    <string name="main_btn_data_binding">Exemplo com DataBinding</string>
+    <string name="main_btn_retrofit">Exemplo com retrofit</string>
 </resources>
