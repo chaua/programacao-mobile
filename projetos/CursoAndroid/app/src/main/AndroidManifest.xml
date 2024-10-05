@@ -36,6 +36,9 @@
             android:name=".MainActivity"
             android:exported="true">
 
+        </activity>
+
+        <activity android:name=".EventoActivity" android:exported="true">
             <!-- Intenção indicando que é a activity principal -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,8 +46,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- TODO: Incluir outras activities aqui .... !-->
 
         <!-- Também incluímos Services, Content Providers, Broadcast Receivers -->
 
