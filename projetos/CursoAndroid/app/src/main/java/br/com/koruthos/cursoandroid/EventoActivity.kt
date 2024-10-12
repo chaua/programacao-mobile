@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
@@ -55,7 +56,7 @@ class EventoActivity : AppCompatActivity(), View.OnClickListener {
         btnToUpperCase.setOnClickListener(this)
 
         // 2. Via lambda
-        
+
         // Usamos essa estrategia para eventos que sao comuns a mais de um componente
         // Exemplo: Operacao de salvar pode ser feita por um botao ou menu
         mBinding.eventoBtnTouppercase.setOnClickListener(::onUpperCaseClick)
@@ -80,6 +81,40 @@ class EventoActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
 
+
+
+
+
+
+        // Exemplo de componentes
+
+        // Sobrescreve a ação do enter do teclado
+        mBinding.eventoEdtEmail.setOnEditorActionListener { textView, actionId, keyEvent ->
+            if (actionId == EditorInfo.IME_ACTION_SEND) {
+                // Sobrescreve a acao do botao
+
+                // Como a ação executou
+                true
+            }
+            else {
+                false
+            }
+        }
+
+        // Exibe a operação de erro no edit text
+        mBinding.eventoBtnError.setOnClickListener {
+            mBinding.eventoEdtEmail.setError("Erro!")
+        }
+
+
+
+
+
+
+
+
+
+
     }
 
     override fun onClick(view: View?) {
@@ -95,5 +130,8 @@ class EventoActivity : AppCompatActivity(), View.OnClickListener {
 
         txtDisplay.text = edtMensagem.text.toString().uppercase()
     }
+
+
+
 
 }
