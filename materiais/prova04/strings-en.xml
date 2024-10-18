@@ -1,0 +1,141 @@
+<resources>
+
+    <!-- App Title -->
+    <string name="app_name">Crazy Recipes</string>
+
+    <!-- Ingredients -->
+    <string name="ingredient1">Eggs</string>
+    <string name="ingredient2">Flour</string>
+    <string name="ingredient3">Sugar</string>
+    <string name="ingredient4">Butter</string>
+    <string name="ingredient5">Milk</string>
+    <string name="ingredient6">Salt</string>
+    <string name="ingredient7">Pepper</string>
+    <string name="ingredient8">Tomato</string>
+    <string name="ingredient9">Cheese</string>
+    <string name="ingredient10">Chicken</string>
+
+    <!-- Recipe 1 -->
+    <string name="recipe1">Alien Ice Cream</string>
+    <string name="recipe1_text">Mix %1$s with %2$s and add %3$s. You'll be left wondering if this can be called ice cream.</string>
+
+    <!-- Recipe 2 -->
+    <string name="recipe2">Space Meatballs</string>
+    <string name="recipe2_text">Mix %1$s with %2$s, add %3$s, and turn these meatballs into a meal from another world!</string>
+
+    <!-- Recipe 3 -->
+    <string name="recipe3">Surreal Cookies</string>
+    <string name="recipe3_text">Mix %1$s with %2$s, add %3$s, and form cookies. The result will be something completely surreal!</string>
+
+    <!-- Recipe 4 -->
+    <string name="recipe4">Desperate Taco</string>
+    <string name="recipe4_text">Place %1$s in the tortilla, add %2$s, and throw %3$s on top. This taco is the result of pure culinary desperation.</string>
+
+    <!-- Recipe 5 -->
+    <string name="recipe5">Destiny Chili</string>
+    <string name="recipe5_text">Mix %1$s with %2$s, add %3$s, and prepare for a chili that defies destiny.</string>
+
+    <!-- Recipe 6 -->
+    <string name="recipe6">Challenge Spaghetti</string>
+    <string name="recipe6_text">Cook %1$s, throw %2$s on top, and finish with %3$s. Will this spaghetti challenge you?</string>
+
+    <!-- Recipe 7 -->
+    <string name="recipe7">Galactic Risotto</string>
+    <string name="recipe7_text">Cook %1$s with %2$s and add %3$s. This risotto is galactic, coming straight from the stars!</string>
+
+    <!-- Recipe 8 -->
+    <string name="recipe8">Joy Stew</string>
+    <string name="recipe8_text">Mix %1$s with %2$s, add %3$s, and cook until joy takes over the kitchen!</string>
+
+    <!-- Recipe 9 -->
+    <string name="recipe9">Chaos Lasagna</string>
+    <string name="recipe9_text">Layer %1$s, throw %2$s, and finish with %3$s. The chaos lasagna promises flavor and confusion!</string>
+
+    <!-- Recipe 10 -->
+    <string name="recipe10">Intergalactic Pancake</string>
+    <string name="recipe10_text">Mix %1$s with %2$s, add %3$s, and prepare for a pancake worthy of a space journey!</string>
+
+    <!-- Recipe 11 -->
+    <string name="recipe11">Impossible Pie</string>
+    <string name="recipe11_text">Mix %1$s with %2$s, add %3$s, and hope that this impossible pie becomes a reality.</string>
+
+    <!-- Recipe 12 -->
+    <string name="recipe12">Adventure Cake</string>
+    <string name="recipe12_text">Mix %1$s, add %2$s, and finish with %3$s. Get ready for a sweet adventure!</string>
+
+    <!-- Recipe 13 -->
+    <string name="recipe13">Chaotic Pizza</string>
+    <string name="recipe13_text">Cover the dough with %1$s, add %2$s, and finish with %3$s. The chaotic pizza might surprise you!</string>
+
+    <!-- Recipe 14 -->
+    <string name="recipe14">Lucky Quiche</string>
+    <string name="recipe14_text">Mix %1$s with %2$s, throw in %3$s, and hope that your luck turns this quiche into something edible.</string>
+
+    <!-- Recipe 15 -->
+    <string name="recipe15">Destiny Muffin</string>
+    <string name="recipe15_text">Mix %1$s with %2$s, add %3$s, and place in the oven. Destiny will decide what these muffins will become!</string>
+
+    <!-- Recipe 16 -->
+    <string name="recipe16">Explosive Cake</string>
+    <string name="recipe16_text">Mix %1$s with %2$s and add %3$s. Cook on high heat and wait for an explosion... of flavors, of course!</string>
+
+    <!-- Additional Recipes -->
+    <string name="recipe17">Mystery Salad</string>
+    <string name="recipe17_text">Chop %1$s, mix with %2$s, and add a dash of %3$s. Can you guess what this salad hides?</string>
+    <string name="recipe18">Daring Dessert</string>
+    <string name="recipe18_text">Combine %1$s with %2$s and sprinkle with %3$s. A daring dessert for the brave!</string>
+    <string name="recipe19">Secret Sauce</string>
+    <string name="recipe19_text">Mix %1$s, %2$s, and %3$s to create a sauce that holds the secrets of the universe!</string>
+    <string name="recipe20">Cosmic Casserole</string>
+    <string name="recipe20_text">Layer %1$s, %2$s, and %3$s for a casserole that’s out of this world!</string>
+    <string name="recipe21">Unexpected Stir-fry</string>
+    <string name="recipe21_text">Stir-fry %1$s with %2$s and add %3$s. Expect the unexpected!</string>
+    <string name="recipe22">Wacky Wrap</string>
+    <string name="recipe22_text">Wrap %1$s, %2$s, and %3$s in a tortilla for a lunch that’s a little wacky!</string>
+    <string name="recipe23">Funky Fondue</string>
+    <string name="recipe23_text">Melt %1$s, dip %2$s, and add a sprinkle of %3$s for a funky twist on fondue!</string>
+    <string name="recipe24">Cheesy Delight</string>
+    <string name="recipe24_text">Melt %1$s with %2$s and top with %3$s. This dish is a cheesy delight!</string>
+    <string name="recipe25">Surprise Bake</string>
+    <string name="recipe25_text">Combine %1$s, %2$s, and %3$s for a surprise bake that will leave you guessing!</string>
+    <string name="recipe26">Rainbow Smoothie</string>
+    <string name="recipe26_text">Blend %1$s, %2$s, and %3$s for a smoothie that’s as colorful as a rainbow!</string>
+    <string name="recipe27">Zesty Dip</string>
+    <string name="recipe27_text">Mix %1$s, %2$s, and %3$s for a dip that will spice up your snack time!</string>
+    <string name="recipe28">Bizarre Burger</string>
+    <string name="recipe28_text">Assemble a burger with %1$s, %2$s, and %3$s. Prepare for a bizarre experience!</string>
+    <string name="recipe29">Nutty Granola</string>
+    <string name="recipe29_text">Combine %1$s, %2$s, and %3$s for a granola that’s nutty and nice!</string>
+    <string name="recipe30">Eccentric Egg Bake</string>
+    <string name="recipe30_text">Whisk %1$s, %2$s, and %3$s together for an eccentric egg bake!</string>
+    <string name="recipe31">Fantasy Quinoa Bowl</string>
+    <string name="recipe31_text">Mix %1$s, %2$s, and %3$s in a bowl for a fantasy meal!</string>
+    <string name="recipe32">Savory Treats</string>
+    <string name="recipe32_text">Create savory treats with %1$s, %2$s, and %3$s that will amaze your taste buds!</string>
+    <string name="recipe33">Bubbly Fruit Mix</string>
+    <string name="recipe33_text">Combine %1$s, %2$s, and %3$s for a bubbly fruit mix that’s refreshing!</string>
+    <string name="recipe34">Sweet and Spicy Mix</string>
+    <string name="recipe34_text">Mix %1$s, %2$s, and %3$s for a sweet and spicy combination!</string>
+    <string name="recipe35">Tasty Nachos</string>
+    <string name="recipe35_text">Layer %1$s, %2$s, and %3$s for tasty nachos that everyone will love!</string>
+    <string name="recipe36">Gourmet Pizza</string>
+    <string name="recipe36_text">Top your pizza with %1$s, %2$s, and %3$s for a gourmet experience!</string>
+    <string name="recipe37">Epic Smoothie Bowl</string>
+    <string name="recipe37_text">Blend %1$s, %2$s, and %3$s for an epic smoothie bowl!</string>
+    <string name="recipe38">Whimsical Salad</string>
+    <string name="recipe38_text">Toss together %1$s, %2$s, and %3$s for a whimsical salad!</string>
+    <string name="recipe39">Dreamy Pancakes</string>
+    <string name="recipe39_text">Create dreamy pancakes using %1$s, %2$s, and %3$s!</string>
+    <string name="recipe40">Sassy Soup</string>
+    <string name="recipe40_text">Prepare a sassy soup with %1$s, %2$s, and %3$s that will warm your heart!</string>
+    <string name="recipe41">Crazy Snack Platter</string>
+    <string name="recipe41_text">Arrange %1$s, %2$s, and %3$s on a platter for a crazy snack time!</string>
+    <string name="recipe42">Hearty Wrap</string>
+    <string name="recipe42_text">Fill a wrap with %1$s, %2$s, and %3$s for a hearty meal!</string>
+    <string name="recipe43">Lively Tacos</string>
+    <string name="recipe43_text">Prepare lively tacos with %1$s, %2$s, and %3$s that will brighten your day!</string>
+    <string name="recipe44">Jolly Fruit Salad</string>
+    <string name="recipe44_text">Mix %1$s, %2$s, and %3$s for a jolly fruit salad!</string>
+    <string name="recipe45">Delicious Delight</string>
+    <string name="recipe45_text">Combine %1$s, %2$s, and %3$s for a delicious delight that you won't forget!</string>
+</resources>
