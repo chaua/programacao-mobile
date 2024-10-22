@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    ****************************************************************************************
+    MENU: menu/aula15_menu_navigation.xml
+    ****************************************************************************************
+
+    O arquivo aula15_menu_navigation.xml é um arquivo de recursos que contém a definição do
+    menu de navegação inferior (Bottom Navigation View) da aplicação. O menu de navegação
+    inferior é um componente visual que permite a navegação entre diferentes telas da aplicação
+    através de ícones e rótulos.
+
+    O menu de navegação inferior é composto por um conjunto de itens, cada um representando uma
+    tela da aplicação. Cada item é representado por uma tag <item>, que contém os seguintes
+    atributos:
+        - android:id: ID do item, que deve ser único.
+        - android:icon: Ícone do item.
+        - android:title: Rótulo do item.
+-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aula15_bnv_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/aula15_bnv_home" />
+
+    <item
+        android:id="@+id/aula15_bnv_livros"
+        android:icon="@drawable/ic_book"
+        android:title="@string/aula15_bnv_livros" />
+
+    <item
+        android:id="@+id/aula15_bnv_filmes"
+        android:icon="@drawable/ic_filme"
+        android:title="@string/aula15_bnv_filmes" />
+
+    <item
+        android:id="@+id/aula15_bnv_perfil"
+        android:icon="@drawable/ic_person"
+        android:title="@string/aula15_bnv_perfil" />
+
+
+</menu>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Seção de variáveis -->
+    <data />
+
+    <!-- Seção de layout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/spacing_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <!-- Título: Button -->
+                <TextView
+                    android:id="@+id/aula14_txt_titulo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_titulo_button"
+                    android:textAppearance="@style/titulo" />
+
+                <!-- Explicação Button -->
+                <TextView
+                    android:id="@+id/aula14_txt_explicacao_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_explicacao_button" />
+
+                <!-- Botão -->
+                <Button
+                    android:id="@+id/aula14_btn_exemplo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:text="@string/aula14_btn_exemplo" />
+
+                <!-- Título: Chip / ChipGroup -->
+                <TextView
+                    android:id="@+id/aula14_txt_titulo_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:text="@string/aula14_txt_titulo_chip"
+                    android:textAppearance="@style/titulo" />
+
+                <!-- Explicação ChipGroup -->
+                <TextView
+                    android:id="@+id/aula14_txt_explicacao_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:text="@string/aula14_txt_explicacao_chip" />
+
+                <!-- ChipGroup com tipos de filmes -->
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:chipSpacingVertical="0dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/aula14_chip_acao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_chip_acao" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/aula14_chip_comedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_chip_comedia" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/aula14_chip_drama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_chip_drama" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/aula14_chip_ficcao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_chip_ficcao" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/aula14_chip_terror"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_chip_terror" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Título: Checkbox -->
+                <TextView
+                    android:id="@+id/aula14_txt_titulo_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_titulo_checkbox"
+                    android:textAppearance="@style/titulo" />
+
+                <!-- Explicação Checkbox -->
+                <TextView
+                    android:id="@+id/aula14_txt_explicacao_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_explicacao_checkbox" />
+
+                <!-- Lista de produtos com checkbox -->
+                <CheckBox
+                    android:id="@+id/aula14_chk_produto_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:text="@string/aula14_chk_produto_1" />
+
+                <CheckBox
+                    android:id="@+id/aula14_chk_produto_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_chk_produto_2" />
+
+                <CheckBox
+                    android:id="@+id/aula14_chk_produto_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_chk_produto_3" />
+
+                <CheckBox
+                    android:id="@+id/aula14_chk_produto_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_chk_produto_4" />
+
+                <CheckBox
+                    android:id="@+id/aula14_chk_produto_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:text="@string/aula14_chk_produto_5" />
+
+                <!-- Título: RadioButton -->
+                <TextView
+                    android:id="@+id/aula14_txt_titulo_radiobutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_titulo_radiobutton"
+                    android:textAppearance="@style/titulo" />
+
+                <!-- Explicação RadioButton -->
+                <TextView
+                    android:id="@+id/aula14_txt_explicacao_radiobutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_explicacao_radiobutton" />
+
+                <!-- RadioGroup com números -->
+                <RadioGroup
+                    android:id="@+id/aula14_rgroup_numeros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/aula14_rbtn_numero_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_rbtn_numero_1" />
+
+                    <RadioButton
+                        android:id="@+id/aula14_rbtn_numero_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_rbtn_numero_2" />
+
+                    <RadioButton
+                        android:id="@+id/aula14_rbtn_numero_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aula14_rbtn_numero_3" />
+                </RadioGroup>
+
+                <!-- RatingBar -->
+                <RatingBar
+                    android:id="@+id/aula14_rbar_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:numStars="5"
+                    android:stepSize="1" />
+
+                <!-- Título: Toggle Button -->
+                <TextView
+                    android:id="@+id/aula14_txt_titulo_togglebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_titulo_togglebutton"
+                    android:textAppearance="@style/titulo" />
+
+                <!-- Explicação Toggle Button -->
+                <TextView
+                    android:id="@+id/aula14_txt_explicacao_togglebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_explicacao_togglebutton" />
+
+                <!-- Toggle Button -->
+                <ToggleButton
+                    android:id="@+id/aula14_tgbtn_exemplo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:textOff="@string/aula14_tgbtn_off"
+                    android:textOn="@string/aula14_tgbtn_on" />
+
+                <!-- Título: Switch -->
+                <TextView
+                    android:id="@+id/aula14_txt_titulo_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_titulo_switch"
+                    android:textAppearance="@style/titulo" />
+
+                <!-- Explicação Switch -->
+                <TextView
+                    android:id="@+id/aula14_txt_explicacao_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_explicacao_switch" />
+
+                <!-- Switch -->
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/aula14_switch_ativar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:text="@string/aula14_switch_ativar" />
+
+                <!-- Título: Floating Action Button -->
+                <TextView
+                    android:id="@+id/aula14_txt_titulo_fab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_titulo_fab"
+                    android:textAppearance="@style/titulo" />
+
+                <!-- Explicação FAB -->
+                <TextView
+                    android:id="@+id/aula14_txt_explicacao_fab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aula14_txt_explicacao_fab" />
+
+                <!-- Floating Action Button -->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/aula14_fab_adicionar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:contentDescription="@string/aula14_fab_adicionar"
+                    app:srcCompat="@drawable/ic_add" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

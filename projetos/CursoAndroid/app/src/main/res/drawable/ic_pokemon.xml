@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Borda externa da Pokébola (preenchida com preto) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,1C6.48,1 2,5.48 2,11C2,16.52 6.48,21 12,21C17.52,21 22,16.52 22,11C22,5.48 17.52,1 12,1ZM12,19C7.59,19 4,15.41 4,11C4,6.59 7.59,3 12,3C16.41,3 20,6.59 20,11C20,15.41 16.41,19 12,19Z"/>
+
+    <!-- Metade superior da Pokébola (preenchida com preto) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,3C7.59,3 4,6.59 4,11H20C20,6.59 16.41,3 12,3Z"/>
+
+    <!-- Metade inferior da Pokébola (transparente) -->
+    <path
+        android:fillColor="#000000"
+        android:fillAlpha="0"
+        android:pathData="M4,11C4,15.41 7.59,19 12,19C16.41,19 20,15.41 20,11H4Z"/>
+
+    <!-- Círculo central da Pokébola (preenchido com preto) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,9C10.34,9 9,10.34 9,12C9,13.66 10.34,15 12,15C13.66,15 15,13.66 15,12C15,10.34 13.66,9 12,9ZM12,13C11.45,13 11,12.55 11,12C11,11.45 11.45,11 12,11C12.55,11 13,11.45 13,12C13,12.55 12.55,13 12,13Z"/>
+
+    <!-- Linha central da Pokébola (preenchida com preto) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M4,11H20"/>
+</vector>

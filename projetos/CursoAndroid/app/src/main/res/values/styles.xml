@@ -1,8 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+    ****************************************************************************************
+    VALUES: styles.xml
+    ****************************************************************************************
+
+    O arquivo styles.xml é um arquivo de recursos que contém estilos que podem ser aplicados a
+    componentes visuais da aplicação. Os estilos são utilizados para definir a aparência de
+    componentes visuais, como textos, botões, caixas de texto, entre outros.
+
+    Os estilos são definidos utilizando a tag <style>, que contém um nome e uma lista de atributos
+    que serão aplicados ao componente visual. Os estilos podem ser aplicados a componentes visuais
+    utilizando o atributo style, que recebe o nome do estilo a ser aplicado.
+-->
 <resources>
 
+    <!-- Estilo para o título da aplicação -->
     <style name="titulo">
-        <item name="android:textSize">12sp</item>
-        <item name="android:foreground">@color/verde_abacate</item>
+        <item name="android:textSize">@dimen/font_larger</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/md_theme_primary</item>
     </style>
+
+    <!-- Estilo para o subtítulo da aplicação -->
+    <style name="subtitulo">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/md_theme_secondary</item>
+    </style>
+
+
 </resources>

@@ -1,25 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+    ***********************************************************************************************
+    ARQUIVO DE CONFIGURAÇÃO: AndroidManifest.xml
+    ***********************************************************************************************
+
+    ===============================================================================================
+    1. Qual a finalidade do arquivo AndroidManifest.xml?
+    ===============================================================================================
+
+    O arquivo AndroidManifest.xml é um arquivo de configuração obrigatório para qualquer aplicativo
+    Android. Ele é responsável por declarar as características da aplicação, como as permissões
+    necessárias, as atividades, serviços, provedores de conte údo e receptores de transmissão que a
+    aplicação possui.
+
+    Ele também é responsável por declarar as configurações de segurança, como as permissões que a
+    aplicação necessita para acessar recursos do sistema, como a câmera, a localização, a internet,
+    entre outros.
+
+    Todos os componentes da aplicação devem ser declarados no arquivo AndroidManifest.xml, para que
+    o sistema operacional Android possa identificar e executar esses componentes. Os componentes
+    do Android são atividades, serviços, provedores de conteúdo e receptores de transmissão.
+-->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- PERMISSÕES -->
+    <!--
+    ***********************************************************************************************
+    PERMISSÕES
+    ***********************************************************************************************
+
+    As permissões são declarações que a aplicação faz ao sistema operacional Android, solicitando
+    acesso a recursos protegidos do sistema, como a internet, a câmera, a localização, entre outros.
+
+    A lista de todas as permissões disponíveis no Android pode ser encontrada na documentação oficial
+    do Android, no link: https://developer.android.com/reference/android/Manifest.permission.html
+    -->
 
     <!-- Solicita permissão de acesso à internet -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Solicita as permissões de localização-->
-    <!--
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    -->
+    <!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
+    <!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
 
     <!-- Solicita permissão de camera -->
+    <!--    <uses-feature android:name="android.hardware.camera"/>-->
+    <!--    <uses-permission android:name="android.permission.CAMERA"/>-->
+
+    <!-- Solicita permissão de leitura de contatos -->
+    <!--    <uses-permission android:name="android.permission.READ_CONTACTS"/>-->
+
     <!--
-    <uses-feature android:name="android.hardware.camera"/>
+    ***********************************************************************************************
+    APPLICATION
+    ***********************************************************************************************
+
+    A tag <application> é a tag principal do arquivo AndroidManifest.xml. Ela é responsável por
+    declarar as características da aplicação, como o ícone, o nome, o tema, as regras de backup, entre
+    outros.
+
+    A tag <application> pode conter as seguintes propriedades:
+        - android:allowBackup: Indica se a aplicação permite backup de dados.
+        - android:dataExtractionRules: Indica o arquivo de regras de extração de dados.
+        - android:fullBackupContent: Indica o arquivo de regras de backup.
+        - android:icon: Indica o ícone da aplicação.
+        - android:label: Indica o nome da aplicação.
+        - android:roundIcon: Indica o ícone redondo da aplicação.
+        - android:supportsRtl: Indica se a aplicação suporta a direção da escrita da direita para a
+          esquerda.
+        - android:theme: Indica o tema da aplicação.
+        - tools:targetApi: Indica a versão do Android que a aplicação está sendo desenvolvida.
     -->
 
-    <!-- APPLICATION -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -31,23 +83,123 @@
         android:theme="@style/Theme.CursoAndroid"
         tools:targetApi="31">
 
+        <!--
+        ===============================================================================================
+        ACTIVITIES
+        ===============================================================================================
+
+        Uma activity é um componente da aplicação que representa uma tela com uma interface de usuário.
+        Ela é responsável por interagir com o usuário, exibindo informações e recebendo entradas do
+        usuário.
+
+        A tag <activity> é usada para declarar uma activity na aplicação. Ela pode conter as seguintes
+        propriedades:
+            - android:name: Indica o nome da classe Java que representa a activity.
+            - android:exported: Indica se a activity pode ser acessada por outras aplicações.
+            - android:label: Indica o nome da activity que será exibido na barra de título.
+            - android:theme: Indica o tema da activity.
+            - android:windowSoftInputMode: Indica o modo de entrada do teclado.
+            - android:launchMode: Indica o modo de lançamento da activity.
+            - android:screenOrientation: Indica a orientação da tela da activity.
+            - android:configChanges: Indica as configurações que a activity pode lidar.
+            - android:parentActivityName: Indica o nome da activity pai.
+            - android:allowEmbedded: Indica se a activity pode ser incorporada em outras atividades.
+
+        Outras propriedades podem ser adicionadas à tag <activity> conforme necessário. Elas podem
+        ser encontradas na documentação oficial do Android, no link: https://developer.android.com/guide/topics/manifest/activity-element.html
+
+        A tag <activity> pode conter uma ou mais tags <intent-filter>, que são usadas para declarar
+        as intenções que a activity pode responder. Uma activity pode ter várias intenções, mas apenas
+        uma delas pode ser a intenção principal, que é a intenção que o sistema Android usa para iniciar
+        a activity quando o usuário clica no ícone do aplicativo.
+
+        A tag <intent-filter> pode conter as seguintes propriedades:
+            - <action>: Indica a ação que a activity pode responder.
+            - <category>: Indica a categoria da ação.
+            - <data>: Indica o tipo de dados que a activity pode manipular.
+        -->
+
         <!-- Activity principal - Inicia a aplicação -->
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
-
-        </activity>
-
-        <activity android:name=".EventoActivity" android:exported="true">
-            <!-- Intenção indicando que é a activity principal -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Também incluímos Services, Content Providers, Broadcast Receivers -->
+        <!-- Aula08 Ciclo de Vida Activity -->
+        <activity
+            android:name=".activities.Aula08CicloDeVidaActivity"
+            android:exported="false" />
+
+        <!-- Aula09 LinearLayout Activity -->
+        <activity
+            android:name=".activities.Aula09LinearLayoutActivity"
+            android:exported="false" />
+
+        <!-- Aula10 ConstraintLayout Activity -->
+        <activity
+            android:name=".activities.Aula10ConstraintLayoutActivity"
+            android:exported="false" />
+
+        <!-- Aula12 Acesso com Data Binding Activity -->
+        <activity
+            android:name=".activities.Aula12AcessoComDataBindingActivity"
+            android:exported="false" />
+
+        <!-- Aula12 Acesso sem Data Binding Activity -->
+        <activity
+            android:name=".activities.Aula12AcessoSemDataBindingActivity"
+            android:exported="false" />
+
+        <!-- Aula13 Componentes de Texto Activity -->
+        <activity
+            android:name=".activities.Aula13ComponentesTextoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Aula14 Componentes de Botão Activity -->
+        <activity
+            android:name=".activities.Aula14ComponentesBotaoActivity"
+            android:exported="false" />
+
+        <!-- Aula15 Fragmentos com Bottom Navigation Activity -->
+        <activity
+            android:name=".activities.Aula15FragmentosBottomNavActivity"
+            android:exported="false" />
+
+        <!-- Aula15 Fragmentos com Tab Layout Activity -->
+        <activity
+            android:name=".activities.Aula15FragmentosTabLayoutActivity"
+            android:exported="false" />
+
+        <!-- Aula15 Fragmentos com ViewPager Activity -->
+        <activity
+            android:name=".activities.Aula15FragmentosViewPagerActivity"
+            android:exported="false" />
+
+        <!-- Aula16 RecyclerView -->
+        <activity
+            android:name=".activities.Aula16RecyclerViewActivity"
+            android:exported="false" />
+
+        <!--
+        No manifesto também é possível declarar serviços, provedores de conteúdo e receptores de transmissão.
+
+        Serviços são componentes da aplicação que executam operações em segundo plano, sem uma interface
+        de usuário. Eles são usados para executar tarefas longas, como baixar arquivos, reproduzir música,
+        entre outros.
+
+        Provedores de conteúdo são componentes da aplicação que gerenciam um conjunto de dados que podem
+        ser compartilhados com outras aplicações. Eles são usados para armazenar e recuperar dados de
+        forma segura.
+
+        Receptores de transmissão são componentes da aplicação que respondem a eventos do sistema ou de
+        outras aplicações. Eles são usados para executar ações em resposta a eventos, como a chegada de
+        uma nova mensagem, a conexão de um dispositivo, entre outros.
+        -->
 
     </application>
 

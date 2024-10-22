@@ -1,9 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
+<?xml version="1.0" encoding="utf-8"?><!--
+    ****************************************************************************************
+    VALUES: colors.xml
+    ****************************************************************************************
 
+    Este arquivo é responsável por declarar as cores utilizadas na aplicação. As cores são
+    utilizadas para definir a aparência dos elementos visuais da aplicação, como textos,
+    botões, barras de progresso, entre outros.
+
+    As cores são declaradas utilizando a tag <color> e o nome da cor é definido no atributo
+    name. O valor da cor é definido no atributo value, utilizando o formato hexadecimal.
+
+    As cores podem ser utilizadas em qualquer arquivo XML da aplicação, utilizando a sintaxe
+    @color/nome_da_cor.
+-->
+<resources>
+    <!-- Cores padrão -->
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
 
+    <!-- Cores do Material Design -->
     <color name="grey_50">#FAFAFA</color>
     <color name="grey_100">#F5F5F5</color>
     <color name="grey_200">#EEEEEE</color>
@@ -279,8 +294,14 @@
     <color name="blue_grey_800">#37474F</color>
     <color name="blue_grey_900">#263238</color>
 
-    <!-- Tema -->
-    <!-- https://material-foundation.github.io/material-theme-builder/ -->
+    <!--
+    =================================================================================================
+    CORES DO TEMA
+    =================================================================================================
+
+    As cores do tema podem ser geradas utilizando o Material Theme Builder, disponível no link:
+    https://material-foundation.github.io/material-theme-builder/
+    -->
     <color name="md_theme_primary">#336940</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#B5F1BC</color>
@@ -422,6 +443,5 @@
     <color name="md_theme_surfaceContainer_highContrast">#EBEFE7</color>
     <color name="md_theme_surfaceContainerHigh_highContrast">#E5EAE1</color>
     <color name="md_theme_surfaceContainerHighest_highContrast">#DFE4DC</color>
-
 
 </resources>

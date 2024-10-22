@@ -1,157 +1,261 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-    View        - São componentes de interação com o usuário
-                - Button, TextView, TextInputEditText, Checkbox, Radio, Chip, ImageView
-    ViewGroups  - São conteineres de outras Views ou ViewGroups
-                - Comportamento de organização dos itens internos
-                - LinearLayout, FrameLayout, ConstraintLayout
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    Todo arquivo de layout deve ter somente um filho na raiz
-        - O filho pode ser View ou ViewGroup
+    <data />
 
-    Para todas Views e ViewGroups, dois atributos são obtigatórios
-        layout_width    - largura
-        layout_height   - altura
-
-    Valores possíves para largura e altura são:
-        match_parent: assume as dimensões do pai
-        wrap_content: assume o tamanho do conteúdo
-        valor absoluto: 100dp, 200dp -> usado somente para imagens / ícones !!!!
-                        0dp -> usado no constraint layout
--->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:background="#EEEEEE"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="16dp"
-        android:text="Botão 1" />
-
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:text="Botão 2" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="16dp"
-        android:text="Botão 3" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00FF00"
-        android:padding="16dp"
-        android:text="Hello, World! 🧩"
-        android:textColor="#005500"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:emojiCompatEnabled="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="#00FF00"
-        android:text="Hello, World!" />
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="Botão 4" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="Botão 5" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/estrela" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/estrela" />
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/estrela" />
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="32dp"
-            android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
-
-    </androidx.cardview.widget.CardView>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ScrollView
-            android:visibility="visible"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Aula08 Ciclo de Vida -->
+            <TextView
+                android:id="@+id/main_txt_ciclo_de_vida"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_ciclo_de_vida" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/main_desc_ciclo_de_vida"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#CCAACC"
-                android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempor tortor. Etiam condimentum semper varius. In lacinia molestie velit, ac malesuada elit dapibus bibendum. In eu placerat quam. Cras eu viverra lorem, ut placerat justo. Ut lacus sem, consectetur tristique feugiat finibus, congue quis metus. Fusce vitae enim vitae felis semper commodo sed vitae turpis. Donec justo magna, consectetur non justo eu, fringilla volutpat justo. Morbi non felis nisl. Pellentesque vel sapien sed orci euismod egestas eu quis odio. Cras sagittis porta sem, vel venenatis neque aliquam quis. Nunc nec rhoncus purus. Integer in nisi lectus. Nullam sagittis tristique ante, eu consequat sem varius ac. Donec faucibus suscipit felis a mollis. " />
+                android:text="@string/main_desc_ciclo_de_vida" />
 
-        </ScrollView>
+            <Button
+                android:id="@+id/main_btn_ciclo_de_vida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_ciclo_de_vida" />
 
-        <ImageView
+            <!-- Aula09 LinearLayout -->
+            <TextView
+                android:id="@+id/main_txt_linear_layout"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_linear_layout" />
 
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/estrela" />
+            <TextView
+                android:id="@+id/main_desc_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_linear_layout" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Botão 6" />
+            <Button
+                android:id="@+id/main_btn_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_linear_layout" />
 
-        <ProgressBar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            <!-- Aula10 ConstraintLayout -->
+            <TextView
+                android:id="@+id/main_txt_constraint_layout"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_constraint_layout" />
 
-    </FrameLayout>
+            <TextView
+                android:id="@+id/main_desc_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_constraint_layout" />
 
+            <Button
+                android:id="@+id/main_btn_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_constraint_layout" />
 
-</LinearLayout>
+            <!-- Aula12 Acesso com Data Binding -->
+            <TextView
+                android:id="@+id/main_txt_acesso_com_data_binding"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_acesso_com_data_binding" />
+
+            <TextView
+                android:id="@+id/main_desc_acesso_com_data_binding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_acesso_com_data_binding" />
+
+            <Button
+                android:id="@+id/main_btn_acesso_com_data_binding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_acesso_com_data_binding" />
+
+            <!-- Aula12 Acesso sem Data Binding -->
+            <TextView
+                android:id="@+id/main_txt_acesso_sem_data_binding"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_acesso_sem_data_binding" />
+
+            <TextView
+                android:id="@+id/main_desc_acesso_sem_data_binding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_acesso_sem_data_binding" />
+
+            <Button
+                android:id="@+id/main_btn_acesso_sem_data_binding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_acesso_sem_data_binding" />
+
+            <!-- Aula13 Componentes de Texto -->
+            <TextView
+                android:id="@+id/main_txt_componentes_texto"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_componentes_texto" />
+
+            <TextView
+                android:id="@+id/main_desc_componentes_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_componentes_texto" />
+
+            <Button
+                android:id="@+id/main_btn_componentes_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_componentes_texto" />
+
+            <!-- Aula14 Componentes de Botão -->
+            <TextView
+                android:id="@+id/main_txt_componentes_botao"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_componentes_botao" />
+
+            <TextView
+                android:id="@+id/main_desc_componentes_botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_componentes_botao" />
+
+            <Button
+                android:id="@+id/main_btn_componentes_botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_componentes_botao" />
+
+            <!-- Aula15 Fragmentos Bottom Navigation -->
+            <TextView
+                android:id="@+id/main_txt_fragmentos_bottom_nav"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_fragmentos_bottom_nav" />
+
+            <TextView
+                android:id="@+id/main_desc_fragmentos_bottom_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_fragmentos_bottom_nav" />
+
+            <Button
+                android:id="@+id/main_btn_fragmentos_bottom_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_fragmentos_bottom_nav" />
+
+            <!-- Aula15 Fragmentos Tab Layout -->
+            <TextView
+                android:id="@+id/main_txt_fragmentos_tab_layout"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_fragmentos_tab_layout" />
+
+            <TextView
+                android:id="@+id/main_desc_fragmentos_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_fragmentos_tab_layout" />
+
+            <Button
+                android:id="@+id/main_btn_fragmentos_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_fragmentos_tab_layout" />
+
+            <!-- Aula15 Fragmentos ViewPager -->
+            <TextView
+                android:id="@+id/main_txt_fragmentos_view_pager"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_fragmentos_view_pager" />
+
+            <TextView
+                android:id="@+id/main_desc_fragmentos_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_fragmentos_view_pager" />
+
+            <Button
+                android:id="@+id/main_btn_fragmentos_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_fragmentos_view_pager" />
+
+            <!-- Aula16 RecyclerView -->
+            <TextView
+                android:id="@+id/main_txt_recycler_view"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_txt_recycler_view" />
+
+            <TextView
+                android:id="@+id/main_desc_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_desc_recycler_view" />
+
+            <Button
+                android:id="@+id/main_btn_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="@string/main_btn_recycler_view" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

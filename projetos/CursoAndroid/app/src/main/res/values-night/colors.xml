@@ -1,5 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+    ****************************************************************************************
+    VALUES-NIGHT: colors.xml
+    ****************************************************************************************
+
+    Este arquivo de configuração é responsável por declarar as cores utilizadas na aplicação
+    quando o tema noturno está ativado.
+
+-->
 <resources>
+
+    <!--
+    =================================================================================================
+    CORES DO TEMA
+    =================================================================================================
+
+    As cores do tema podem ser geradas utilizando o Material Theme Builder, disponível no link:
+    https://material-foundation.github.io/material-theme-builder/
+    -->
     <color name="md_theme_primary">#9AD4A1</color>
     <color name="md_theme_onPrimary">#003916</color>
     <color name="md_theme_primaryContainer">#1A512A</color>

@@ -1,4 +1,201 @@
 <resources>
     <string name="app_name">CursoAndroid</string>
     <string name="botao_ok">OK</string>
+
+    <!-- Main -->
+    <string name="main_txt_ciclo_de_vida">Ciclo de Vida</string>
+    <string name="main_desc_ciclo_de_vida">Demonstra os métodos do ciclo de vida de uma activity no Android.</string>
+    <string name="main_btn_ciclo_de_vida">Ir para Ciclo de Vida</string>
+
+    <string name="main_txt_linear_layout">LinearLayout</string>
+    <string name="main_desc_linear_layout">Exemplo de uso do LinearLayout no Android.</string>
+    <string name="main_btn_linear_layout">Ir para LinearLayout</string>
+
+    <string name="main_txt_constraint_layout">ConstraintLayout</string>
+    <string name="main_desc_constraint_layout">Aprenda a usar o ConstraintLayout de forma eficiente.</string>
+    <string name="main_btn_constraint_layout">Ir para ConstraintLayout</string>
+
+    <string name="main_txt_acesso_com_data_binding">Acesso com Data Binding</string>
+    <string name="main_desc_acesso_com_data_binding">Exemplo de uso do Data Binding no Android.</string>
+    <string name="main_btn_acesso_com_data_binding">Ir para Acesso com Data Binding</string>
+
+    <string name="main_txt_acesso_sem_data_binding">Acesso sem Data Binding</string>
+    <string name="main_desc_acesso_sem_data_binding">Exemplo sem o uso do Data Binding no Android.</string>
+    <string name="main_btn_acesso_sem_data_binding">Ir para Acesso sem Data Binding</string>
+
+    <string name="main_txt_componentes_texto">Componentes de Texto</string>
+    <string name="main_desc_componentes_texto">Vários componentes de entrada de texto como EditText e TextView.</string>
+    <string name="main_btn_componentes_texto">Ir para Componentes de Texto</string>
+
+    <string name="main_txt_componentes_botao">Componentes de Botão</string>
+    <string name="main_desc_componentes_botao">Vários componentes de botão como Button, ToggleButton, etc.</string>
+    <string name="main_btn_componentes_botao">Ir para Componentes de Botão</string>
+
+    <string name="main_txt_fragmentos_bottom_nav">Fragmentos com Bottom Navigation</string>
+    <string name="main_desc_fragmentos_bottom_nav">Exemplo de navegação inferior (Bottom Navigation) com Fragmentos.</string>
+    <string name="main_btn_fragmentos_bottom_nav">Ir para Fragmentos Bottom Navigation</string>
+
+    <string name="main_txt_fragmentos_tab_layout">Fragmentos com Tab Layout</string>
+    <string name="main_desc_fragmentos_tab_layout">Exemplo de Tab Layout com Fragmentos.</string>
+    <string name="main_btn_fragmentos_tab_layout">Ir para Fragmentos Tab Layout</string>
+
+    <string name="main_txt_fragmentos_view_pager">Fragmentos com ViewPager</string>
+    <string name="main_desc_fragmentos_view_pager">Exemplo de ViewPager com Fragmentos.</string>
+    <string name="main_btn_fragmentos_view_pager">Ir para Fragmentos ViewPager</string>
+
+    <string name="main_txt_recycler_view">RecyclerView</string>
+    <string name="main_desc_recycler_view">Exemplo de RecyclerView.</string>
+    <string name="main_btn_recycler_view">Ir para RecyclerView</string>
+
+    <!-- Aula 09 -->
+    <string name="aula09_botao1">Botão 1</string>
+    <string name="aula09_texto1">Botão com largura match_parent</string>
+    <string name="aula09_texto2">Botão com largura wrap_content</string>
+    <string name="aula09_botao2">Botão 2</string>
+    <string name="aula09_texto3">Botão com gravidade center</string>
+    <string name="aula09_botao3">Botão 3</string>
+
+
+    <!-- Aula 12 -->
+    <string name="databinding_txt_titulo_sem_databinding">Acessando Componentes via Código sem Data Binding</string>
+    <string name="databinding_txt_explicacao_sem_databinding">Você pode acessar componentes da tela no código Java ou Kotlin usando findViewById, que busca o componente pelo seu ID.</string>
+    <string name="databinding_txt_titulo_com_databinding">Acessando Componentes via Código com Data Binding</string>
+    <string name="databinding_txt_explicacao_com_databinding">DataBinding vincula diretamente a UI a dados no Android, eliminando o uso de findViewById() no código.</string>
+
+    <string name="databinding_txt_titulo_exemplo">Exemplo</string>
+    <string name="databinding_txt_instrucao">Encontre a bomba:</string>
+    <string name="databinding_txt_mensagem">Clique em um dos botões para descobrir onde está a bomba.</string>
+    <string name="databinding_btn_opcao">🎁</string>
+
+    <string name="databinding_btn_01">Botão 1</string>
+    <string name="databinding_btn_02">Botão 2</string>
+    <string name="databinding_btn_03">Botão 3</string>
+    <string name="databinding_btn_04">Botão 4</string>
+    <string name="databinding_btn_05">Botão 5</string>
+    <string name="databinding_btn_06">Botão 6</string>
+    <string name="databinding_btn_07">Botão 7</string>
+    <string name="databinding_btn_08">Botão 8</string>
+    <string name="databinding_btn_09">Botão 9</string>
+    <string name="databinding_btn_10">Botão 10</string>
+    <string name="databinding_btn_11">Botão 11</string>
+    <string name="databinding_btn_12">Botão 12</string>
+    <string name="databinding_txt_mensagem_perdeu">Você perdeu!!! 😭😭😭</string>
+    <string name="databinding_txt_mensagem_continuar">Não era a bomba. Você pode continuar! 😮‍💨</string>
+
+    <!-- string-array: usado para criar um array de strings -->
+    <string-array name="databinding_btn_itens">
+        <item>🎉</item>
+        <item>🍫</item>
+        <item>🎈</item>
+        <item>🌟</item>
+        <item>💣</item>
+        <item>🌻</item>
+        <item>🚀</item>
+        <item>🍩</item>
+        <item>🍔</item>
+        <item>🎸</item>
+        <item>🎃</item>
+        <item>⚽</item>
+        <item>🎵</item>
+        <item>🐱</item>
+    </string-array>
+
+
+    <!-- Aula 13 -->
+    <string name="aula13_txt_titulo">TextInputEditText</string>
+    <string name="aula13_txt_explicacao">Esse componente permite a entrada de texto, números, senhas e outras informações. Ele é usado para capturar entradas do usuário de várias formas e pode incluir validações e ações especiais no teclado.</string>
+
+    <string name="aula13_txt_evento_texto_normal">Entrada de texto normal</string>
+    <string name="aula13_btn_evento_texto_normal">Evento</string>
+    <string name="aula13_edt_evento_texto_normal">Digite algo</string>
+
+    <string name="aula13_txt_evento_numeros">Entrada de números apenas</string>
+    <string name="aula13_btn_evento_numeros">Evento</string>
+    <string name="aula13_edt_evento_numeros">Digite um número</string>
+
+    <string name="aula13_txt_evento_senha">Entrada de senha</string>
+    <string name="aula13_btn_evento_senha">Evento</string>
+    <string name="aula13_edt_evento_senha">Digite sua senha</string>
+
+    <string name="aula13_txt_evento_senha_olho">Entrada de senha com exibir senha</string>
+    <string name="aula13_btn_evento_senha_olho">Evento</string>
+    <string name="aula13_edt_evento_senha_olho">Digite sua senha</string>
+
+    <string name="aula13_txt_evento_email">Entrada de email</string>
+    <string name="aula13_btn_evento_email">Evento</string>
+    <string name="aula13_edt_evento_email">Digite seu email</string>
+
+    <string name="aula13_txt_evento_send">Entrada com botão enviar</string>
+    <string name="aula13_btn_evento_send">Evento</string>
+    <string name="aula13_edt_evento_send">Digite algo</string>
+
+    <string name="aula13_txt_evento_search">Entrada com botão pesquisar</string>
+    <string name="aula13_btn_evento_search">Evento</string>
+    <string name="aula13_edt_evento_search">Pesquisar</string>
+
+    <string name="aula13_txt_evento_erro_icon">Entrada com mensagem de erro (i)</string>
+    <string name="aula13_btn_evento_erro_icon">Evento</string>
+    <string name="aula13_edt_evento_erro_icon">Digite algo</string>
+
+    <string name="aula13_txt_evento_textview">Entrada que exibe o texto na TextView</string>
+    <string name="aula13_edt_evento_textview">Digite algo</string>
+    <string name="aula13_txt_error">Ocorreu um erro interno!</string>
+
+
+    <!-- Aula 14 -->
+    <string name="aula14_txt_titulo_button">Button</string>
+    <string name="aula14_txt_titulo_chip">Chip / ChipGroup</string>
+    <string name="aula14_txt_titulo_checkbox">Checkbox</string>
+    <string name="aula14_txt_titulo_radiobutton">RadioButton</string>
+    <string name="aula14_txt_titulo_togglebutton">Toggle Button</string>
+    <string name="aula14_txt_titulo_switch">Switch</string>
+    <string name="aula14_txt_titulo_fab">Floating Action Button</string>
+
+    <string name="aula14_txt_explicacao_button">Use o botão para executar uma ação ao ser clicado.</string>
+    <string name="aula14_txt_explicacao_chip">Use o ChipGroup para selecionar ou filtrar itens como categorias.</string>
+    <string name="aula14_txt_explicacao_checkbox">Use checkboxes para selecionar múltiplos itens.</string>
+    <string name="aula14_txt_explicacao_radiobutton">Use RadioButtons para selecionar uma única opção.</string>
+    <string name="aula14_txt_explicacao_togglebutton">Use o ToggleButton para ligar/desligar uma configuração.</string>
+    <string name="aula14_txt_explicacao_switch">Use o Switch para ativar ou desativar uma configuração.</string>
+    <string name="aula14_txt_explicacao_fab">Use o Floating Action Button para uma ação principal.</string>
+
+    <string name="aula14_btn_exemplo">Clique Aqui</string>
+    <string name="aula14_chip_acao">Ação</string>
+    <string name="aula14_chip_comedia">Comédia</string>
+    <string name="aula14_chip_drama">Drama</string>
+    <string name="aula14_chip_ficcao">Ficção Científica</string>
+    <string name="aula14_chip_terror">Terror</string>
+    <string name="aula14_chk_produto_1">🍎 Maçã</string>
+    <string name="aula14_chk_produto_2">🥛 Leite</string>
+    <string name="aula14_chk_produto_3">🍞 Pão</string>
+    <string name="aula14_chk_produto_4">🍫 Chocolate</string>
+    <string name="aula14_chk_produto_5">🥚 Ovos</string>
+    <string name="aula14_rbtn_numero_1">1</string>
+    <string name="aula14_rbtn_numero_2">3</string>
+    <string name="aula14_rbtn_numero_3">5</string>
+    <string name="aula14_tgbtn_off">Desativado</string>
+    <string name="aula14_tgbtn_on">Ativado</string>
+    <string name="aula14_switch_ativar">Ativar</string>
+    <string name="aula14_fab_adicionar">Adicionar</string>
+
+
+    <!-- Aula 15 -->
+    <!-- Bottom Navigation Strings -->
+    <string name="aula15_bnv_home">Home</string>
+    <string name="aula15_bnv_livros">Livros</string>
+    <string name="aula15_bnv_filmes">Filmes</string>
+    <string name="aula15_bnv_perfil">Perfil</string>
+
+    <!-- Fragment Titles -->
+    <string name="aula15_txt_home">Tela Home 🏠</string>
+    <string name="aula15_txt_livros">Tela Livros 📚</string>
+    <string name="aula15_txt_filmes">"Tela Filmes 🍿 "</string>
+    <string name="aula15_txt_perfil">Perfil 🧑🏽‍🔬</string>
+
+
+    <!-- Aula 16 -->
+    <string name="aula16_img_pokemon">Imagem do pokemon {}</string>
+    <string name="aula16_bnv_pokemon">Pokémon</string>
+
+
 </resources>

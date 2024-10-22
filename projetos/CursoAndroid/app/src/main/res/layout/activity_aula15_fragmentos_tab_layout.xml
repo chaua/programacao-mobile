@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Seção de dados -->
+    <data />
+
+    <!-- Fragment container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TabLayout para alternar entre os fragmentos -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/aula15_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+
+        <!-- ViewPager2 para trocar entre os fragmentos -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/aula15_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</layout>

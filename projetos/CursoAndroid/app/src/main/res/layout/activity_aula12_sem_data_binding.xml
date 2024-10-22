@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_normal">
+
+        <!-- Título da tela -->
+        <TextView
+            android:id="@+id/databinding_txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:textAppearance="@style/titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Texto explicativo -->
+        <TextView
+            android:id="@+id/databinding_txt_explicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_txt_titulo" />
+
+        <!-- Título da seção Exemplo -->
+        <TextView
+            android:id="@+id/databinding_txt_exemplo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/databinding_txt_titulo_exemplo"
+            android:textAppearance="@style/titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_txt_explicacao" />
+
+        <!-- Instrução para o usuário -->
+        <TextView
+            android:id="@+id/databinding_txt_instrucao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/databinding_txt_instrucao"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_txt_exemplo" />
+
+        <!-- Mensagem para o usuário -->
+        <TextView
+            android:id="@+id/databinding_txt_mensagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/databinding_txt_mensagem"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_txt_instrucao" />
+
+        <!-- Botões organizados em 4x4 -->
+
+        <!-- Primeira linha de botões -->
+        <Button
+            android:id="@+id/databinding_btn_01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_larger"
+            android:contentDescription="@string/databinding_btn_01"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_txt_mensagem"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:contentDescription="@string/databinding_btn_02"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_03"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_01"
+            app:layout_constraintTop_toTopOf="@+id/databinding_btn_01"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_03"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:contentDescription="@string/databinding_btn_03"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_02"
+            app:layout_constraintTop_toTopOf="@+id/databinding_btn_01"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <!-- Segunda linha de botões -->
+        <Button
+            android:id="@+id/databinding_btn_04"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_04"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_01"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_05"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_05"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_06"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_04"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_02"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_06"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_06"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_05"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_03"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <!-- Terceira linha de botões -->
+        <Button
+            android:id="@+id/databinding_btn_07"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_07"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_04"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_08"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_08"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_09"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_07"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_05"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_09"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_09"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_08"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_06"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <!-- Quarta linha de botões -->
+        <Button
+            android:id="@+id/databinding_btn_10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_10"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_07"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_11"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/databinding_btn_12"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_10"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_08"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <Button
+            android:id="@+id/databinding_btn_12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:contentDescription="@string/databinding_btn_12"
+            android:text="@string/databinding_btn_opcao"
+            android:textSize="@dimen/font_larger"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/databinding_btn_11"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_btn_09"
+            app:layout_constraintWidth_percent="0.25" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

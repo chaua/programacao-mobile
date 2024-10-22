@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+    ******************************************************************************
+    ARQUIVO DE LAYOUT: activity_constraint_layout.xml
+    ******************************************************************************
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        ===================================================================================
+        * ConstraintLayout
+        ===================================================================================
+
+        O ConstraintLayout é um layout que permite criar layouts complexos com uma hierarquia
+        plana. Ele é mais flexível e poderoso que os layouts tradicionais, como o LinearLayout
+        e o RelativeLayout. Ele é baseado em restrições, que são regras que definem a posição e o
+        tamanho dos elementos filhos em relação a outros elementos ou ao próprio layout.
+
+        As restrições são definidas através de atributos, como layout_constraintStart_toStartOf,
+        layout_constraintEnd_toEndOf, layout_constraintTop_toTopOf, layout_constraintBottom_toBottomOf,
+        entre outros.
+
+        A forma mais fácil de adicionar restrições é através do editor de layout do Android Studio.
+    -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Título do ConstraintLayout -->
+        <TextView
+            android:id="@+id/constraint_txt_titulo_constraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Constraint Layout"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Descrição do ConstraintLayout -->
+        <TextView
+            android:id="@+id/constraint_txt_desc_constraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="O ConstraintLayout é um layout flexível que permite posicionar e dimensionar widgets de maneira eficiente e complexa."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_titulo_constraint" />
+
+        <!-- Título Perfil -->
+        <TextView
+            android:id="@+id/constraint_txt_titulo_perfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Perfil"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_desc_constraint" />
+
+        <!-- Imagem de Perfil -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/constraint_img_perfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/profile_homer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_titulo_perfil" />
+
+        <!-- Ícone de Pessoa e Nome -->
+        <ImageView
+            android:id="@+id/constraint_img_icone_pessoa"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Foto de Perfil"
+            android:src="@drawable/ic_person"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_perfil"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_perfil"
+            app:tint="@color/light_blue_500" />
+
+        <TextView
+            android:id="@+id/constraint_txt_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:contentDescription="Nome da Pessoa"
+            android:text="Homer Simpson"
+            android:textColor="@color/blue_900"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_icone_pessoa"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_icone_pessoa" />
+
+        <!-- Ícone de Profissão e Profissão -->
+        <ImageView
+            android:id="@+id/constraint_img_icone_profissao"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Profissão"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:src="@drawable/ic_work"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_img_icone_pessoa"
+            app:tint="@color/light_blue_500" />
+
+        <TextView
+            android:id="@+id/constraint_txt_profissao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Operador de segurança nuclear"
+            android:textColor="@color/grey_700"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/constraint_img_icone_profissao"
+            app:layout_constraintEnd_toEndOf="@+id/constraint_txt_nome"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_icone_profissao"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_icone_profissao" />
+
+        <!-- Ícone de Descrição e Descrição do Trabalho -->
+        <ImageView
+            android:id="@+id/constraint_img_icone_descricao"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Descrição do Trabalho"
+            android:src="@drawable/ic_notes"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_img_icone_profissao"
+            app:tint="@color/light_blue_500" />
+
+        <TextView
+            android:id="@+id/constraint_txt_descricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="3"
+            android:text="Homer Simpson trabalha na Usina Nuclear de Springfield como operador de segurança. Embora não seja muito diligente no trabalho, é conhecido por sua sorte e por escapar de situações perigosas. Além de suas atividades na usina, ele tem diversas aventuras na cidade e com sua família."
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_icone_descricao"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_icone_descricao" />
+
+        <!-- Ícones de Compartilhar e Editar -->
+        <ImageView
+            android:id="@+id/constraint_img_icone_compartilhar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Compartilhar Perfil"
+            android:src="@drawable/ic_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_icone_editar"
+            app:tint="@color/light_blue_500" />
+
+        <ImageView
+            android:id="@+id/constraint_img_icone_editar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Editar Perfil"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintEnd_toStartOf="@+id/constraint_img_icone_compartilhar"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/constraint_txt_descricao"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_descricao"
+            app:tint="@color/light_blue_500" />
+
+        <!-- Títulos dos Posts, Curtidas e Amigos -->
+        <TextView
+            android:id="@+id/constraint_txt_posts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Total de Posts"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/constraint_txt_curtidas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_img_icone_editar" />
+
+        <TextView
+            android:id="@+id/constraint_txt_curtidas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Total de Curtidas"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/constraint_txt_amigos"
+            app:layout_constraintStart_toEndOf="@+id/constraint_txt_posts"
+            app:layout_constraintTop_toTopOf="@+id/constraint_txt_posts" />
+
+        <TextView
+            android:id="@+id/constraint_txt_amigos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total de Amigos"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraint_txt_curtidas"
+            app:layout_constraintTop_toTopOf="@+id/constraint_txt_curtidas" />
+
+        <!-- Valores de Posts, Curtidas e Amigos -->
+        <TextView
+            android:id="@+id/constraint_txt_valor_posts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="250"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/constraint_txt_valor_curtidas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_posts" />
+
+        <TextView
+            android:id="@+id/constraint_txt_valor_curtidas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="1.5k"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/constraint_txt_valor_amigos"
+            app:layout_constraintStart_toEndOf="@+id/constraint_txt_valor_posts"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_curtidas" />
+
+        <TextView
+            android:id="@+id/constraint_txt_valor_amigos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="300"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraint_txt_valor_curtidas"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_amigos" />
+
+        <!-- Subtítulo Amigos -->
+        <TextView
+            android:id="@+id/constraint_txt_subtitulo_amigos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Amigos"
+            android:textColor="@color/blue_900"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_valor_posts" />
+
+        <!-- Conjunto de imagens de amigos -->
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_marge"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/constraint_img_amigo2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_txt_subtitulo_amigos" />
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="8dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_bart"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/constraint_img_amigo3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_amigo1"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_amigo1" />
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_lisa"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_amigo2"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_amigo2" />
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_maggie"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/constraint_img_amigo5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/constraint_img_amigo1"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_img_amigo1" />
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_lenny"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_amigo5"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_amigo5" />
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="8dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_moe"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/constraint_img_amigo6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/constraint_img_amigo4"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_amigo4" />
+
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_homer"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/constraint_img_amigo8"
+            app:layout_constraintStart_toStartOf="@id/constraint_img_amigo4"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_img_amigo4" />
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_burns"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/constraint_img_amigo8"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_amigo8" />
+
+        <ImageView
+            android:id="@+id/constraint_img_amigo8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Imagem de perfil de um amigo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_flanders"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/constraint_img_amigo9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/constraint_img_amigo7"
+            app:layout_constraintTop_toTopOf="@+id/constraint_img_amigo7" />
+
+        <!-- Floating Action Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/constraint_fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/cyan_800"
+            android:contentDescription="Adicionar algo"
+            android:foregroundTintMode="add"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@android:color/white" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

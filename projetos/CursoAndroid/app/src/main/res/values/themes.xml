@@ -1,5 +1,23 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<?xml version="1.0" encoding="utf-8"?><!--
+    ***********************************************************************************************
+    VALUES: themes.xml
+    ***********************************************************************************************
+
+    O arquivo themes.xml é responsável por declarar os temas da aplicação. Um tema é um conjunto de
+    estilos que são aplicados a todos os componentes visuais da aplicação, como as atividades, os
+    fragmentos, os diálogos, entre outros.
+
+    O tema padrão da é responsável por definir as cores padrão da aplicação, como a cor primária, a
+    cor secundária, a cor de fundo, entre outras. Ele é atribuído a todos os componentes visuais da
+    aplicação no arquivo AndroidManifest.xml, na tag <application>, através do atributo android:theme.
+
+    Neste projeto, o tema padrão é o tema "Theme.CursoAndroid". Ele é um tema derivado do tema
+    "Theme.Material3.Light.NoActionBar", que é um tema do Material Design 3.
+
+    As cores foram criados usando o Material Theme Builder, disponível no link:
+    https://material-foundation.github.io/material-theme-builder/
+-->
+<resources>
 
     <style name="Theme.CursoAndroid" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_primary</item>
@@ -50,6 +68,7 @@
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
     </style>
 
+    <!-- Medium contrast theme -->
     <style name="ThemeOverlay.AppTheme.MediumContrast" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_primary_mediumContrast</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary_mediumContrast</item>
@@ -98,6 +117,8 @@
         <item name="colorSurfaceContainerHigh">@color/md_theme_surfaceContainerHigh_mediumContrast</item>
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest_mediumContrast</item>
     </style>
+
+    <!-- High contrast theme -->
     <style name="ThemeOverlay.AppTheme.HighContrast" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_primary_highContrast</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary_highContrast</item>
@@ -146,7 +167,5 @@
         <item name="colorSurfaceContainerHigh">@color/md_theme_surfaceContainerHigh_highContrast</item>
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest_highContrast</item>
     </style>
-
-
 
 </resources>
