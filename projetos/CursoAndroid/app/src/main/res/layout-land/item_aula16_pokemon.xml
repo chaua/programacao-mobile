@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Seção de dados -->
+    <data>
+        <!-- Defina a variável que será vinculada com o objeto Pokemon -->
+        <variable
+            name="pokemon"
+            type="br.com.koruthos.cursoandroid.models.Pokemon" />
+    </data>
+
+    <!-- Seção de layout -->
+
+    <!--
+    Para configurar efeito de clique no card view:
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+    -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pokemon_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/yellow_200"
+            android:padding="@dimen/spacing_normal">
+
+            <!-- Exibe a imagem do Pokémon -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pokemon_image"
+                android:layout_width="@dimen/image_huge"
+                android:layout_height="@dimen/image_huge"
+                android:layout_margin="@dimen/spacing_small"
+                android:contentDescription="@{String.format(@string/aula16_img_pokemon, pokemon.nome)}"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Nome do Pokémon -->
+            <TextView
+                android:id="@+id/pokemon_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@{pokemon.nome}"
+                android:textColor="@color/blue_800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pokemon_image"
+                app:layout_constraintTop_toTopOf="@+id/pokemon_image"
+                tools:text="Nome do pokemon" />
+
+            <!-- Tipo do Pokémon -->
+            <TextView
+                android:id="@+id/pokemon_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@{pokemon.tipo}"
+                android:textColor="@color/yellow_900"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pokemon_image"
+                app:layout_constraintTop_toBottomOf="@+id/pokemon_name"
+                tools:text="Tipo do pokemon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

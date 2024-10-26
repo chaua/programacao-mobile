@@ -256,6 +256,29 @@
                 android:layout_marginBottom="@dimen/spacing_larger"
                 android:text="@string/main_btn_recycler_view" />
 
+            <!-- Aula16 RecyclerView -->
+            <TextView
+                android:id="@+id/main_txt_tradutor"
+                style="@style/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tradutor" />
+
+            <TextView
+                android:id="@+id/main_desc_Tradutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+            <Button
+                android:id="@+id/main_btn_Tradutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_larger"
+                android:text="Ir para tradutor" />
+
+
         </LinearLayout>
     </ScrollView>
 </layout>

@@ -194,8 +194,9 @@
 
 
     <!-- Aula 16 -->
-    <string name="aula16_img_pokemon">Imagem do pokemon {}</string>
+    <string name="aula16_img_pokemon">Imagem do pokemon %1s</string>
     <string name="aula16_bnv_pokemon">Pokémon</string>
+    <string name="aula16_tradutor_mensagem">Mensagem</string>
 
 
 </resources>

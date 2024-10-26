@@ -69,6 +69,10 @@ class PokemonAdapter(
         // Atualiza a view com os dados do pokemon
         holder.binding.pokemon = pokemon
 
+        // O código acima é equivalente ao código debaixo
+        // holder.binding.pokemonName.text = pokemon.nome
+        // holder.binding.pokemonType.text = pokemon.tipo
+
         // Carrega a imagem dos pokemons
         //      - Para isso usaremos a biblioteca Glide. Essa biblioteca é usada para baixar
         //      e exibir imagens de forma eficiente. Ela possui métodos para carregar imagens

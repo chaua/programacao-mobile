@@ -185,6 +185,11 @@
             android:name=".activities.Aula16RecyclerViewActivity"
             android:exported="false" />
 
+        <!-- Aula16 Tradutor -->
+        <activity
+            android:name=".activities.Aula16TradutorActivity"
+            android:exported="false" />
+
         <!--
         No manifesto também é possível declarar serviços, provedores de conteúdo e receptores de transmissão.
 

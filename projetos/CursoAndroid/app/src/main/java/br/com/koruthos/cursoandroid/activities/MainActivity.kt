@@ -60,6 +60,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Aula16RecyclerViewActivity::class.java))
         }
 
+        mBinding.mainBtnTradutor.setOnClickListener {
+            // Cria uma intenção para ir para outra activity
+            val intent = Intent(this,  Aula16TradutorActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 

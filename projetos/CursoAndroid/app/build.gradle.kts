@@ -20,7 +20,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("kotlin-kapt")   // TODO: Precisa adicionar para o DataBinding
 }
 
 // =================================================================================================
@@ -77,7 +77,7 @@ android {
     // buildFeatures: são as funcionalidades de compilação do projeto. Nele, é possível configurar as funcionalidades
     // de data binding e view binding. No exemplo, as funcionalidades de data binding e view binding estão habilitadas.
     buildFeatures {
-        dataBinding = true  // Habilita o Data Binding
+        dataBinding = true  // TODO: Habilita o Data Binding
     }
 
     // buildToolsVersion: é a versão da ferramenta de compilação. No exemplo, a versão é a 35.0.0.

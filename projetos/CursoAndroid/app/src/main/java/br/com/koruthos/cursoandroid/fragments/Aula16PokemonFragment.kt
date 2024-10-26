@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.koruthos.cursoandroid.databinding.FragmentAula16PokemonBinding
 import br.com.koruthos.cursoandroid.models.Pokemon
@@ -62,6 +63,9 @@ class Aula16PokemonFragment : Fragment() {
         //      - A orientação da lista (LinearLayoutManager.VERTICAL ou LinearLayoutManager.HORIZONTAL)
         //      - Se a lista deve ser invertida
         mBinding.aula16RvPokemon.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+
+        // GridLayoutManager: permite organizar os itens em forma de tabela
+        // mBinding.aula16RvPokemon.layoutManager = GridLayoutManager(context, 2)
     }
 
     /**
