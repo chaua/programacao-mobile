@@ -122,4 +122,18 @@ dependencies {
     // glide: é a dependência do Glide. Serve para carregar imagens de forma assíncrona.
     implementation("com.github.bumptech.glide:glide:4.12.0")
 
+    // retrofit2: é a biblioteca para realizar as conexões http e mapear a interface do webservice
+    implementation("com.squareup.retrofit2:retrofit:2.11.0") {
+        exclude(module = "okhttp")
+    }
+    implementation("com.squareup.okhttp3:logging-interceptor:3.10.0")
+    implementation("com.squareup.okhttp3:okhttp:3.12.0")
+
+    // plugin para usar gson para a serialização dos objetos em JSON e vice-versa
+    implementation("com.squareup.retrofit2:converter-gson:2.5.0")
+
+    // gson: realiza a conversão direta de objetos para json
+    implementation("com.google.code.gson:gson:2.8.9")
+
+
 }

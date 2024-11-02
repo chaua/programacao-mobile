@@ -121,7 +121,7 @@
 
         <!-- Activity principal - Inicia a aplicação -->
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.Aula18RetrofitActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
