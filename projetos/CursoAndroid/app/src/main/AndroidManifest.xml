@@ -121,7 +121,7 @@
 
         <!-- Activity principal - Inicia a aplicação -->
         <activity
-            android:name=".activities.Aula18RetrofitActivity"
+            android:name=".activities.Aula19WebserviceActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -188,6 +188,11 @@
         <!-- Aula16 Tradutor -->
         <activity
             android:name=".activities.Aula16TradutorActivity"
+            android:exported="false" />
+
+        <!-- Aula18 Retrofit -->
+        <activity
+            android:name=".activities.Aula18RetrofitActivity"
             android:exported="false" />
 
         <!--

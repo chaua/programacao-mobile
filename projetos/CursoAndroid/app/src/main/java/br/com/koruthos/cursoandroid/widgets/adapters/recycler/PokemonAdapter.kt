@@ -82,12 +82,17 @@ class PokemonAdapter(
             .load(pokemon.urlImagem)
             .centerCrop()
             .placeholder(R.drawable.ic_placeholder)
+            .error(R.drawable.ic_placeholder)
             .into(holder.binding.pokemonImage)
 
         // Cadastra os eventos de callback
         //      - Neste exemplo, qndo o card for clickado, ele vai avisar a activity
         holder.binding.pokemonCard.setOnClickListener {
             callback.onItemClick(pokemon)
+        }
+
+        holder.binding.pokemonImage.setOnClickListener {
+            callback.onCompartilharClick(pokemon)
         }
 
         // Atualiza a view com os dados do pokemon
@@ -109,6 +114,7 @@ class PokemonAdapter(
      */
     interface EventListener {
         fun onItemClick(pokemon: Pokemon)
+        fun onCompartilharClick(pokemon: Pokemon)
     }
 
     // ---------------------------------------------------------------------------------------------

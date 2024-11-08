@@ -53,6 +53,10 @@ class Aula16PokemonFragment : Fragment() {
             override fun onItemClick(pokemon: Pokemon) {
                 abrirPagina(pokemon)
             }
+
+            override fun onCompartilharClick(pokemon: Pokemon) {
+                TODO("Not yet implemented")
+            }
         })
 
         // Atribui o adapter ao RecyclerView
