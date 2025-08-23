@@ -43,6 +43,8 @@ layout:
 História, evolução e características de apps mobile.
 
 {% file src=".gitbook/assets/Aula01 - Conceitos gerais de programação mobile.pdf" %}
+
+
 {% endcolumn %}
 {% endcolumns %}
 
@@ -54,6 +56,10 @@ História, evolução e características de apps mobile.
 {% column width="91.66666666666667%" %}
 **Aula 02 - Ecossistema mobile** \
 Diferença entre apps nativos, híbridos e multiplataforma.
+
+{% file src=".gitbook/assets/Aula02 - Ecossistema mobile.pdf" %}
+
+
 {% endcolumn %}
 {% endcolumns %}
 
@@ -65,6 +71,10 @@ Diferença entre apps nativos, híbridos e multiplataforma.
 {% column width="91.66666666666667%" %}
 **Aula 03 - Introdução ao Flutter + Configuração do Ambiente** \
 O que é Flutter, vantagens, instalação e setup do ambiente.
+
+{% file src=".gitbook/assets/Aula03 - Introdução ao Flutter.pdf" %}
+
+
 {% endcolumn %}
 {% endcolumns %}
 
@@ -74,19 +84,19 @@ O que é Flutter, vantagens, instalação e setup do ambiente.
 {% endcolumn %}
 
 {% column width="91.66666666666667%" %}
-**Aula 04 - Paradigmas de programação mobile** \
-Programação orientada a objetos, declarativa e reativa.
-{% endcolumn %}
-{% endcolumns %}
-
-{% columns %}
-{% column width="8.333333333333332%" %}
-<mark style="color:$success;">22/08</mark>&#x20;
-{% endcolumn %}
-
-{% column width="91.66666666666667%" %}
-**Aula 05 - Linguagem Dart – Fundamentos** \
+**Aula 04 - Linguagem Dart – Fundamentos** \
 Variáveis, tipos de dados, funções e controle de fluxo.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column width="8.333333333333332%" %}
+<mark style="color:$success;">22/08</mark>&#x20;
+{% endcolumn %}
+
+{% column width="91.66666666666667%" %}
+**Aula 05 - Linguagem Dart – Funções** \
+Funções, passagem de parâmetros opcionais e nomeados.
 {% endcolumn %}
 {% endcolumns %}
 
