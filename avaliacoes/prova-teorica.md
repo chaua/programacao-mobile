@@ -42,3 +42,7 @@ Avaliar os conhecimentos individuais de programação em **Dart**, por meio da r
 * Clareza e correção da lógica apresentada.
 * Domínio da linguagem Dart (sintaxe e recursos).
 * Organização e legibilidade das respostas.
+
+## :white\_check\_mark: Gabarito
+
+{% file src="../.gitbook/assets/prova01.pdf" %}

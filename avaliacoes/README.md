@@ -20,11 +20,11 @@ layout:
 ## :calendar\_spiral: 1º Bimestre
 
 {% columns %}
-{% column width="8.333333333333332%" %}
-<mark style="color:$success;">26/09</mark>
+{% column width="16.666666666666664%" %}
+<p align="right"><mark style="color:$success;">26/09</mark></p>
 {% endcolumn %}
 
-{% column width="91.66666666666667%" %}
+{% column width="83.33333333333334%" %}
 {% content-ref url="estudo-dirigido-1.md" %}
 [estudo-dirigido-1.md](estudo-dirigido-1.md)
 {% endcontent-ref %}
@@ -32,11 +32,11 @@ layout:
 {% endcolumns %}
 
 {% columns %}
-{% column width="8.333333333333332%" %}
-<mark style="color:$success;">26/09</mark>
+{% column width="16.666666666666664%" %}
+<p align="right"><mark style="color:$success;">26/09</mark></p>
 {% endcolumn %}
 
-{% column width="91.66666666666667%" %}
+{% column width="83.33333333333334%" %}
 {% content-ref url="prova-pratica.md" %}
 [prova-pratica.md](prova-pratica.md)
 {% endcontent-ref %}
@@ -44,14 +44,18 @@ layout:
 {% endcolumns %}
 
 {% columns %}
-{% column width="8.333333333333332%" %}
-<mark style="color:$success;">26/09</mark>
+{% column width="16.666666666666664%" %}
+<p align="right"><mark style="color:$success;">26/09</mark></p>
 {% endcolumn %}
 
-{% column width="91.66666666666667%" %}
+{% column width="83.33333333333334%" %}
 {% content-ref url="prova-teorica.md" %}
 [prova-teorica.md](prova-teorica.md)
 {% endcontent-ref %}
+
+{% file src="../.gitbook/assets/prova01.pdf" %}
+
+
 {% endcolumn %}
 {% endcolumns %}
 
@@ -60,31 +64,31 @@ layout:
 ## :calendar\_spiral: 2º Bimestre
 
 {% columns %}
-{% column width="8.333333333333332%" %}
-<mark style="color:$success;">21/11</mark>&#x20;
+{% column width="16.666666666666664%" %}
+<p align="right"><mark style="color:$success;">21/11</mark> </p>
 {% endcolumn %}
 
-{% column width="91.66666666666667%" %}
+{% column width="83.33333333333334%" %}
 **Estudo dirigido 2**
 {% endcolumn %}
 {% endcolumns %}
 
 {% columns %}
-{% column width="8.333333333333332%" %}
-<mark style="color:$success;">05/12</mark>&#x20;
+{% column width="16.666666666666664%" %}
+<p align="right"><mark style="color:$success;">05/12</mark> </p>
 {% endcolumn %}
 
-{% column width="91.66666666666667%" %}
+{% column width="83.33333333333334%" %}
 **Segunda chamada**
 {% endcolumn %}
 {% endcolumns %}
 
 {% columns %}
-{% column width="8.333333333333332%" %}
-<mark style="color:$success;">12/12</mark>&#x20;
+{% column width="16.666666666666664%" %}
+<p align="right"><mark style="color:$success;">12/12</mark> </p>
 {% endcolumn %}
 
-{% column width="91.66666666666667%" %}
+{% column width="83.33333333333334%" %}
 **Exame Final**
 {% endcolumn %}
 {% endcolumns %}
