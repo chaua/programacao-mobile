@@ -1,0 +1,10 @@
+{
+    "@locale": "en",
+
+    "appName": "Internationalization Example",
+    "mensagemOla": "Hello, {nome}",
+    "mensagemPontos": "You have {valor, plural, =0{zero points} =1{one point} other{{valor} points!}}",
+    "mensagemGenero": "{genero, select, male{He} female{She} other{They}} won!",
+    "dataAtual": "Current date",
+    "valorAtual": "Current value"
+}

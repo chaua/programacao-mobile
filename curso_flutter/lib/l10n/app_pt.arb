@@ -1,0 +1,38 @@
+{
+    "appName": "Exemplo App",
+    "mensagemOla": "Hello, {nome}",
+    "@mensagemOla": {
+        "description": "Greeting message",
+        "placeholders": {
+            "nome": {
+                "type": "Object"
+            }
+        }
+    },
+    "mensagemPontos": "You have {pontos} points.",
+    "@mensagemPontos": {
+        "description": "Message showing the number of points",
+        "placeholders": {
+            "pontos": {
+                "type": "int"
+            }
+        }
+    },
+    "mensagemGenero": "Your gender is {genero}.",
+    "@mensagemGenero": {
+        "description": "Message showing the gender",
+        "placeholders": {
+            "genero": {
+                "type": "String"
+            }
+        }
+    },
+    "dataAtual": "Current date",
+    "@dataAtual": {
+        "description": "Label for the current date"
+    },
+    "valorAtual": "Current value",
+    "@valorAtual": {
+        "description": "Label for the current value"
+    }
+}
