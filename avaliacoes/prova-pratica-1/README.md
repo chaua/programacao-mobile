@@ -33,8 +33,8 @@ O aplicativo deve conter **as três telas abaixo**, funcionando conforme o fluxo
 2. **Login Page**
    * Realiza autenticação via `POST https://dummyjson.com/auth/login`.
    * Usa as credenciais de teste:\
-     `username: kminchelle`\
-     `password: 0lelplR`
+     `username: emilys`\
+     `password: emilypass`
    * Armazena o token com `flutter_secure_storage` ou `shared_preferences`.
    * Ao logar, navega para a tela principal.
 3. **Home Page (Lista de Produtos)**

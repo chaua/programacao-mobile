@@ -117,7 +117,7 @@ final authService = AuthService();
 final authRepo = AuthRepository();
 
 final resp = await authService.login(
-  const LoginRequest(username: 'kminchelle', password: '0lelplR'),
+  const LoginRequest(username: 'emilys', password: 'emilypass'),
 );
 
 await authRepo.saveToken(resp.token);
