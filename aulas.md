@@ -87,7 +87,7 @@ O que é Flutter, vantagens, instalação e setup do ambiente.
 **Aula 04 - Linguagem Dart – Fundamentos** \
 Variáveis, tipos de dados, funções e controle de fluxo.
 
-[#programacao-dart](03-codigos.md#programacao-dart "mention")
+[#programacao-dart](03-codigos/#programacao-dart "mention")
 
 
 {% endcolumn %}
@@ -102,7 +102,7 @@ Variáveis, tipos de dados, funções e controle de fluxo.
 **Aula 05 - Linguagem Dart – Funções** \
 Funções, passagem de parâmetros opcionais e nomeados.
 
-[#programacao-dart](03-codigos.md#programacao-dart "mention")
+[#programacao-dart](03-codigos/#programacao-dart "mention")
 
 
 {% endcolumn %}
