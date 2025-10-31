@@ -17,13 +17,7 @@ layout:
 
 # 5️⃣ Configurar Constantes
 
-perfeito 👏 vamos detalhar o **passo 5** — com título curto, organização em pastas e código comentado.
-
-***
-
-### **5️⃣ Configurar Constantes**
-
-#### 🎯 Objetivo
+## 🎯 Objetivo
 
 Centralizar todas as informações fixas da aplicação (URLs, endpoints, timeouts, nomes de storage, etc.) em um único arquivo.
 
