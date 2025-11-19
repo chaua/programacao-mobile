@@ -21,6 +21,7 @@
     * [🅱️ Detalhes](avaliacoes/prova-pratica-1/detalhes.md)
   * [📑 Prova prática 2ºB - 2](avaliacoes/prova-pratica-2ob-2.md)
   * [📑 Prova prática 2ºB - 3](avaliacoes/prova-pratica-2ob-3.md)
+  * [🌟 Atividade complementar](avaliacoes/atividade-complementar.md)
 * [📂 Códigos](03-codigos/README.md)
   * [Mudar ícone do App](03-codigos/mudar-icone-do-app.md)
   * [Tutorial firebase](03-codigos/tutorial-firebase.md)
