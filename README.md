@@ -23,35 +23,38 @@ metaLinks:
 
 # 🏡 Apresentação
 
-## Introdução
+O **desenvolvimento para dispositivos móveis** é uma área estratégica da Computação voltada à criação de aplicações que operam em smartphones, tablets e outros dispositivos portáteis. Com a crescente demanda por soluções acessíveis, interativas e responsivas, a área mobile tornou-se uma das mais relevantes do setor tecnológico, exigindo dos profissionais habilidades técnicas específicas e domínio sobre plataformas de desenvolvimento.
 
-A Inteligência Artificial (IA) é uma área de pesquisa da Ciência da Computação que estuda como realizar os comportamentos inteligentes dos seres humanos em um computador. O objetivo final da IA é fazer com que o computador possa aprender, planejar e resolver problemas de maneira autônoma. Embora a IA tenha sido estudada por mais de meio século, ainda não é possível criar um computador tão inteligentes como os seres humanos em todos os aspectos. Entretanto, é possível criar diversas aplicações bem sucedidas. Em alguns casos, um computador equipado com IA pode ser até mais inteligente que nós humanos.
+Neste contexto, destaca-se o Flutter, um framework moderno e multiplataforma criado pela Google, que permite o desenvolvimento de aplicativos com desempenho nativo tanto para Android quanto para iOS a partir de um único código-base. Utilizando a linguagem Dart, o Flutter oferece um conjunto robusto de widgets e ferramentas que favorecem a produtividade, a qualidade do design e a experiência do usuário.
 
-As principais áreas de estudo da IA incluem: resolução de problemas, raciocínio, planejamento, entendimento de linguagem natural, visão computacional, programação automática, aprendizado de máquina, entre outras.
+Esta disciplina tem como objetivo capacitar o estudante no desenvolvimento completo de aplicações móveis, desde os conceitos fundamentais até a publicação nas lojas de aplicativos. Além do domínio técnico da linguagem Dart e do Flutter, o estudante será estimulado a compreender aspectos de design de interfaces, usabilidade, arquitetura de software, integração com APIs e controle de versões, sempre com foco na resolução de problemas reais.
 
-## Objetivos do curso
+### **Objetivos do Curso**
 
-Neste curso, nós vamos estudar os conceitos fundamentais para o entendimento da IA. Os tópicos estudados serão:
+Neste curso, estudaremos os principais conceitos, técnicas e ferramentas para o desenvolvimento de aplicativos móveis utilizando Flutter. Os tópicos abordados incluem:
 
-* Introdução à I.A.
-* Introdução a Agentes Inteligentes
-* Resolução de Problemas por meio de Busca
-  * Busca Heurística (Busca Gulosa, A\*, Hill Climbing, Simulated Annealing)
-  * Busca Competitiva (Minimax)
-* Conhecimento e Raciocínio
-  * Lógica de Primeira Ordem
-  * Programação em Lógica (Prolog)
-  * Inferência em Lógica de Primeira Ordem
-* Conhecimento Incerto e Raciocínio (Redes Bayesianas, Modelos Ocultos de Markov)
+* Fundamentos do desenvolvimento mobile
+* Plataformas, tipos de aplicativos e ciclo de vida mobile
+* Configuração de ambiente e ferramentas de desenvolvimento (Android Studio, Xcode)
+* Linguagem Dart: tipos, estruturas de controle, orientação a objetos
+* Criação de interfaces com Flutter: widgets, layouts, temas e responsividade
+* Gerenciamento de estado e arquitetura de aplicações (MVC, BLoC)
+* Navegação entre telas, rotas e passagem de parâmetros
+* Consumo de APIs REST, autenticação e segurança
+* Persistência de dados local e em nuvem
+* Animações, interações e responsividade de alto nível
+* Publicação de aplicativos na Google Play e App Store
+* Boas práticas de teste, depuração e manutenção de apps
 
-## Referências bibliográficas
+### Referências Bibliográficas
 
-\[1] S. J. Russell & P. Norvig. **Artificial Intelligence: A Modern Approach.** Prentice Hall, 3rd edition, 2010.
+1. LECHETA, Ricardo R. _Google Android: Aprenda a criar aplicações para dispositivos móveis com o Android SDK_. 4ª ed. Novatec, 2015.
+2. MORAIS, Myllena S. F. _Fundamentos de Desenvolvimento Mobile_. Porto Alegre, RS: Sagah, 2022. E-book.
+3. OLIVEIRA, Diego B. et al. _Desenvolvimento para Dispositivos Móveis (Vol. 1)_. Porto Alegre, RS: Sagah, 2019. E-book.
+4. DEITEL, Paul. _Android para Programadores_. Porto Alegre: Bookman, 2016.
+5. SIMAS, Victor L. et al. _Desenvolvimento para Dispositivos Móveis (Vol. 2)_. Porto Alegre, RS: Sagah, 2019.
+6. MONK, Simon. _Projetos com Arduino e Android_. Porto Alegre: Bookman, 2014.
+7. SILVA, Diego (Org.). _Desenvolvimento para Dispositivos Móveis_. São Paulo: Pearson, 2016.
 
-\[2] E. Rich e K. Knight. **Inteligência Artificial.** Makron Books, 1993.
 
-\[3] T. M. Mitchell. **Machine Learning.** McGraw–Hill Science/Engineering/Math, 1997.
 
-\[4] S. O. Rezende. **Sistemas Inteligentes: Fundamentos e Aplicações.** Barueri: Manole, 2003.
-
-\[5] M. Wooldridge. **An Introduction To Multiagent Systems.** Wiley, ISBN: 0470519460, 2009.

@@ -25,13 +25,13 @@ metaLinks:
 
 ## Estudos dirigidos
 
-17/04/2026\
-📄 **ED 1: Análise comparativa de algoritmos de busca**
+15/04/2026\
+📄 **ED 1: Engenharia reversa de aplicativos mobile**
 
 ***
 
 19/06/2026\
-📄 **ED 2: Utilização de algoritmos genéticos para problemas de escalonamento**
+📄 **ED 2: Componentes de interface**
 
 ***
 
@@ -39,13 +39,13 @@ metaLinks:
 
 ## Provas
 
-17/04/2026\
-✏️ **Prova 1º Bimestre**
+15/04/2026\
+✏️ **Prova 1º Bimestre: teórica**
 
 ***
 
 19/06/2026\
-✏️ **Prova 2º Bimestre**
+✏️ **Prova 2º Bimestre: apresentação**
 
 ***
 
