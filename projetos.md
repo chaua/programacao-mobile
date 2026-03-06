@@ -2,7 +2,7 @@
 hidden: true
 noIndex: true
 layout:
-  width: wide
+  width: default
   title:
     visible: true
   description:
