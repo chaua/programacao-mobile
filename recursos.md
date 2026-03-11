@@ -54,13 +54,16 @@ metaLinks:
   IDE online para desenvolvimento Android e Flutter.
 * **Android Studio**\
   [https://developer.android.com/studio](https://developer.android.com/studio)\
-  IDE oficial para desenvolvimento Android e Flutter.
+  IDE oficial para desenvolvimento Android e Flutter. (instalar plugin flutter)
 * **Visual Studio Code**\
   [https://code.visualstudio.com](https://code.visualstudio.com)\
-  Editor leve com suporte completo a Flutter e Dart.
+  Editor leve com suporte completo a Flutter e Dart. (instalar plugin flutter)
 * **DartPad**\
   [https://dartpad.dev](https://dartpad.dev)\
   Executar dart no navegador
+* **Zapp!**\
+  [https://zapp.run/](https://zapp.run/) \
+  IDE online - não sincroniza com github
 
 ***
 
