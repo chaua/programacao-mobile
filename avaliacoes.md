@@ -44,6 +44,13 @@ metaLinks:
 
 ***
 
+17/04/2026\
+✏️ **Prova 1º Bimestre: prática**
+
+{% file src=".gitbook/assets/Prova Prática - Programação Dart.pdf" %}
+
+***
+
 19/06/2026\
 ✏️ **Prova 2º Bimestre: apresentação**
 
