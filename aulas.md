@@ -36,6 +36,8 @@ Apresentação do Plano de Ensino, Plano de Aula e Plano de Estudo Dirigido. Int
 📗 **Aula 01: Conceitos Mobile**\
 História, evolução e tendências do desenvolvimento mobile.
 
+{% file src=".gitbook/assets/Aula01 - Conceitos gerais de programação mobile.pdf" %}
+
 ***
 
 04/03/2026\
@@ -47,6 +49,8 @@ Princípios de usabilidade, acessibilidade e diretrizes para interfaces eficazes
 06/03/2026\
 📗 **Aula 03: Ecossistema Mobile**\
 Comparação entre apps nativos, híbridos, web e PWA, focando usos e vantagens.
+
+{% file src=".gitbook/assets/Aula03 - Ecossistema mobile.pdf" %}
 
 ***
 
