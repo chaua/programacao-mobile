@@ -78,6 +78,8 @@ Lista de exercícios práticos de programação utilizando a linguagem Dart.
 📗 **Aula 07: Introdução ao Flutter**\
 O que é Flutter, vantagens da abordagem multiplataforma, instalação e configuração do ambiente.
 
+{% file src=".gitbook/assets/Aula07 - Introdução ao Flutter.pdf" %}
+
 ***
 
 27/03/2026\
