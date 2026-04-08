@@ -1,5 +1,6 @@
 ---
 noIndex: true
+icon: memo-circle-check
 layout:
   width: default
   title:
@@ -21,17 +22,19 @@ metaLinks:
     - https://app.gitbook.com/s/rXEEaCo4s5Nzp0fD3eOo/avaliacoes
 ---
 
-# 📝 Avaliações
+# Avaliações
 
 ## Estudos dirigidos
 
 15/04/2026\
-📄 **ED 1: Engenharia reversa de aplicativos mobile**
+📄 **ED 1: Componentes de interface**
+
+{% file src=".gitbook/assets/ED1 - Folder de componentes Material Design.pdf" %}
 
 ***
 
 19/06/2026\
-📄 **ED 2: Componentes de interface**
+📄 **ED 2: Engenharia reversa de aplicativos mobile**
 
 ***
 

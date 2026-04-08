@@ -1,5 +1,6 @@
 ---
 noIndex: true
+icon: books
 layout:
   width: default
   title:
@@ -21,7 +22,7 @@ metaLinks:
     - https://app.gitbook.com/s/rXEEaCo4s5Nzp0fD3eOo/recursos
 ---
 
-# 📚 Recursos
+# Recursos
 
 ## Materiais de Referência
 

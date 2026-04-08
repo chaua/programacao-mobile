@@ -1,6 +1,7 @@
 ---
 hidden: true
 noIndex: true
+icon: folder-open
 layout:
   width: default
   title:
@@ -22,5 +23,5 @@ metaLinks:
     - https://app.gitbook.com/s/rXEEaCo4s5Nzp0fD3eOo/projetos
 ---
 
-# 📂 Projetos
+# Projetos
 

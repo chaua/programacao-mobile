@@ -1,5 +1,6 @@
 ---
 noIndex: true
+icon: house
 layout:
   width: default
   title:
@@ -21,7 +22,7 @@ metaLinks:
     - https://app.gitbook.com/s/rXEEaCo4s5Nzp0fD3eOo/
 ---
 
-# 🏡 Apresentação
+# Apresentação
 
 ## Introdução
 
