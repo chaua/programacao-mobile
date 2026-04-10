@@ -110,14 +110,20 @@ Atividade prática: criação de telas explorando diferentes tipos de layouts no
 ***
 
 <mark style="color:$info;">08/04/2026</mark>\
-<i class="fa-book-blank">:book-blank:</i> **Aula 10: Widgets no Flutter – Parte 2**\
-Construção de telas combinando Stateless e Stateful Widgets.
+<i class="fa-book-blank">:book-blank:</i> ~~**Aula 10: Widgets no Flutter – Parte 2**~~\
+~~Construção de telas combinando Stateless e Stateful Widgets.~~
+
+Prática widgets
 
 ***
 
 <mark style="color:$info;">10/04/2026</mark>\
-<i class="fa-book-blank">:book-blank:</i> **Aula 11: Navegação entre Telas**\
-Uso de rotas, Navigator e passagem de parâmetros entre telas.
+<i class="fa-book-blank">:book-blank:</i> ~~**Aula 11: Navegação entre Telas**~~\
+~~Uso de rotas, Navigator e passagem de parâmetros entre telas.~~
+
+Revisão
+
+{% file src=".gitbook/assets/Atividade - Revisão P1.pdf" %}
 
 ***
 
