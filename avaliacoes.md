@@ -54,6 +54,12 @@ metaLinks:
 
 ***
 
+<mark style="background-color:yellow;">29/04/2026</mark>\ <mark style="background-color:yellow;">✏️</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**Prova Prática 2.1**</mark>
+
+{% file src=".gitbook/assets/Prova Prática 2.1.pdf" %}
+
+***
+
 19/06/2026\
 ✏️ **Prova 2º Bimestre: apresentação**
 
