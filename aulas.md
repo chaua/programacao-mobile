@@ -147,6 +147,8 @@ Configuração de múltiplos idiomas e gerenciamento de textos dinâmicos em apl
 <i class="fa-book-blank">:book-blank:</i> **Aula 13: Boas Práticas de Arquitetura (Clean Architecture)**\
 Estruturação de projetos em camadas: domain, data e presentation.
 
+{% file src=".gitbook/assets/Atividade - Clean Architecture.pdf" %}
+
 ***
 
 <mark style="color:$info;">24/04/2026</mark>\
