@@ -156,7 +156,7 @@ Estruturação de projetos em camadas: domain, data e presentation.
 
 {% file src=".gitbook/assets/Atividade - Stateful + Navigator.pdf" %}
 
-{% file src="/broken/files/grYWogPgK6uw1q2iAECm" %}
+{% file src=".gitbook/assets/lib.zip" %}
 
 ***
 
