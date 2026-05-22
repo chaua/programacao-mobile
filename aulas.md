@@ -182,6 +182,8 @@ Autenticação, segurança e integração com serviços externos.
 💻 **Oficina: Integração com APIs**\
 Desenvolvimento de aplicativo com autenticação e consumo de API.
 
+[código](https://dartpad.dev/?id=e6be27f8f0aa6cea7959f539223f0ab7)
+
 ***
 
 <mark style="color:$info;">13/05/2026</mark>\
