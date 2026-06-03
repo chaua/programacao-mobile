@@ -17,6 +17,8 @@ layout:
     visible: false
   tags:
     visible: true
+  actions:
+    visible: true
 metaLinks:
   alternates:
     - https://app.gitbook.com/s/rXEEaCo4s5Nzp0fD3eOo/avaliacoes
@@ -29,12 +31,16 @@ metaLinks:
 15/04/2026\
 📄 **ED 1: Componentes de interface**
 
-{% file src=".gitbook/assets/ED1 - Folder de componentes Material Design.pdf" %}
+{% file src="../.gitbook/assets/ED1 - Folder de componentes Material Design.pdf" %}
 
 ***
 
 19/06/2026\
-📄 **ED 2: Engenharia reversa de aplicativos mobile**
+📄 **ED 2: Como Monetizar um Aplicativo**
+
+{% content-ref url="estudo-dirigido-2.md" %}
+[estudo-dirigido-2.md](estudo-dirigido-2.md)
+{% endcontent-ref %}
 
 ***
 
@@ -50,13 +56,21 @@ metaLinks:
 17/04/2026\
 ✏️ **Prova 1º Bimestre: prática**
 
-{% file src=".gitbook/assets/Prova Prática - Programação Dart.pdf" %}
+{% file src="../.gitbook/assets/Prova Prática - Programação Dart.pdf" %}
 
 ***
 
 <mark style="background-color:yellow;">29/04/2026</mark>\ <mark style="background-color:yellow;">✏️</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**Prova Prática 2.1**</mark>
 
-{% file src=".gitbook/assets/Prova Prática 2.1.pdf" %}
+{% file src="../.gitbook/assets/Prova Prática 2.1.pdf" %}
+
+***
+
+<mark style="background-color:yellow;">19/06/2026</mark>\ <mark style="background-color:yellow;">✏️</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**Prova Prática 2.3**</mark>
+
+{% content-ref url="prova-pratica-2.3.md" %}
+[prova-pratica-2.3.md](prova-pratica-2.3.md)
+{% endcontent-ref %}
 
 ***
 
