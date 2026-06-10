@@ -18,6 +18,8 @@ layout:
     visible: false
   tags:
     visible: true
+  actions:
+    visible: true
 metaLinks:
   alternates:
     - https://app.gitbook.com/s/rXEEaCo4s5Nzp0fD3eOo/aulas
@@ -196,11 +198,15 @@ Uso de animações implícitas, controladas e transições.
 <i class="fa-book-blank" style="color:$primary;">:book-blank:</i> **Aula 18: Armazenamento Interno**\
 Uso de SQLite, SharedPreferences e bancos NoSQL locais.
 
+{% file src=".gitbook/assets/Aula18 - Armazenamento Local.key.pdf" %}
+
 ***
 
 <mark style="color:$info;">20/05/2026</mark>\
 <i class="fa-book-blank" style="color:$primary;">:book-blank:</i> **Aula 19: Armazenamento Remoto**\
 Integração com Firebase Firestore e autenticação.
+
+{% file src=".gitbook/assets/Aula19 - Armazenamento Remoto.key.pdf" %}
 
 ***
 
