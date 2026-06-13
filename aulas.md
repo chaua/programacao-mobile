@@ -258,19 +258,19 @@ Geração de APK/AAB e processo de publicação na Play Store e App Store.
 
 ***
 
-<mark style="color:$info;">19/06/2026</mark>\
+<mark style="color:$info;">26/06/2026</mark>\
 📝 **Prova 2º Bimestre**\
 Avaliação abrangendo todo o conteúdo teórico e prático do segundo bimestre.
 
 ***
 
-<mark style="color:$info;">24/06/2026</mark>\
+<mark style="color:$info;">30/06/2026</mark>\
 🔁 **Segunda Chamada – 1º e 2º Bimestres**\
 Prova de reposição para alunos que não participaram das avaliações regulares.
 
 ***
 
-<mark style="color:$info;">01/07/2026</mark>\
+<mark style="color:$info;">03/07/2026</mark>\
 🏁 **Prova Final**\
 Avaliação integrativa abrangendo os principais conteúdos dos dois bimestres
 

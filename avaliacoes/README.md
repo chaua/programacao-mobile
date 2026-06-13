@@ -66,7 +66,7 @@ metaLinks:
 
 ***
 
-<mark style="background-color:yellow;">19/06/2026</mark>\ <mark style="background-color:yellow;">✏️</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**Prova Prática 2.3**</mark>
+<mark style="background-color:yellow;">26/06/2026</mark>\ <mark style="background-color:yellow;">✏️</mark> <mark style="background-color:yellow;"></mark><mark style="background-color:yellow;">**Prova Prática 2.3**</mark>
 
 {% content-ref url="prova-pratica-2.3.md" %}
 [prova-pratica-2.3.md](prova-pratica-2.3.md)
@@ -74,17 +74,12 @@ metaLinks:
 
 ***
 
-19/06/2026\
-✏️ **Prova 2º Bimestre: apresentação**
-
-***
-
-22/06/2026\
+30/06/2026\
 🔁 **Segunda Chamada – 1º e 2º Bimestres**
 
 ***
 
-29/06/2026\
+03/07/2026\
 🏁 **Prova Final**
 
 ***

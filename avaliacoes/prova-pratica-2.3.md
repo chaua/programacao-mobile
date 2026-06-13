@@ -94,5 +94,3 @@ A avaliação do trabalho final será realizada com base nos seguintes critério
 5. **Avaliação pelos Colegas**
    * Cada equipe será avaliada pelos demais colegas com base em critérios objetivos, mediante formulário disponibilizado ao final das apresentações
    * A nota da avaliação coletiva será ponderada com os demais critérios.
-
-📊 ApresentaçãoData da apresentação: 28/11
